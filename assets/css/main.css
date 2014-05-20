@@ -17,6 +17,14 @@
     margin: auto;
 }
 
+.howtitle {
+    font-weight: bold;
+    text-align: center;
+}
+
+.justify {
+    text-align: center;
+}
 
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
@@ -438,7 +446,7 @@ iframe, #headerwrap {
 }
 
 .divider6 {
-	background-image: url('../img/bg/divider6.jpg')
+	background-image: url('../img/skyline.jpg')
 }
 
 
