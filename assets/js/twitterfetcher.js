@@ -103,7 +103,7 @@ var twitterFetcher = function () {
                 e = c.length;
                 g = 0;
                 f = document.getElementById(y);
-                for (h = "<div class='row'>"; g < e;) h += "<div class='col-md-4'>" + c[g] + "</div>", g++;
+                for (h = "<div class='row'>"; g < e;) h += "<div class='col-md-4 col-centered'>" + c[g] + "</div>", g++;
                 f.innerHTML = h + "</ul>"
             } else w(c);
             t = !1;
@@ -156,12 +156,3 @@ var twitterFetcher = function () {
 // custom format to display the date/time of the post, and does not show
 // retweets.
 twitterFetcher.fetch('468983036164317184', 'tweets', 3, true, true, false, undefined, false, undefined, false);
-
-// For advanced example which allows you to customize how tweet time is
-// formatted you simply define a function which takes a JavaScript date as a
-// parameter and returns a string!
-// See http://www.w3schools.com/jsref/jsref_obj_date.asp for properties
-// of a Date object.
-function dateFormatter(date) {
-  return date.toTimeString();
-}
