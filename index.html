@@ -47,8 +47,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li> <a href="#buy" class="smoothScroll"> Buy</a></li>
-			<li> <a href="#delivery" class="smoothScroll"> Delivery</a></li>
-			<li> <a href="#services" class="smoothScroll"> Why Us</a></li>
+			<li> <a href="#how" class="smoothScroll"> How it works</a></li>
+			<li> <a href="#testimonials" class="smoothScroll"> Testimonials</a></li>
 			<li> <a href="#team" class="smoothScroll"> Team</a></li>
 			<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
         </div><!--/.nav-collapse -->
@@ -57,15 +57,15 @@
     </div>
 
 	<!-- ==== HEADERWRAP ==== -->
-	<header class="header" id="home" name="home" role="banner">
+	<header class="header" role="banner">
 	  <div class="region-inner">
-	    <a id="home"></a>
 	    <div class="page-title-wrapper" data-embed="https://vimeo.com/95911153 ">
 	      <div class="title-inner">
 	        <div class="title-wrapper">
+	        	<a id="home" name="home"></a>
+			  <i class="fa-play"></i><br><br><br><br>
 	          <h1>Trashing.me</h1>
 	          <h2><span>BUY YOUR TRASHING SUPPLIES BELOW</span></h2>
-			  <i class="fa-play"></i>
 	        </div>
 	      </div>
 	    </div>
@@ -73,96 +73,87 @@
 
 	</header>
 	
-	<!-- ==== ABOUT ==== -->
+	<!-- ==== BUY ==== -->
 	<div class="container" id="buy" name="buy">
-		<div class="row white">
-		<br>
-			<h1 class="centered"> SALE NOW ON! +25% OFF UNTIL SATURDAY MIDNIGHT</h1>
-			<hr>
-			
-			<div class="row">
-				<div class="col-lg-4">
-					<h2>COMMONER  1+</h2>
-					<img class="pack" src="./assets/img/packs/commoner.jpg">
-					<p><b> Suitable for 1+ trashings </b></p>
-					<p>5 party poppers, 1 party hat, 1 necklace, 2l of conffetti, and a blowout.</p>
+		<div class="row white centered">
+			<br>
+			<h1 class="sale"> SALE NOW ON! +25% OFF UNTIL SATURDAY MIDNIGHT</h1>
+		
+			<div class="col-lg-4 callout">
+				<h2>COMMONER  1+</h2>
+				<img class="pack" src="./assets/img/packs/commoner.jpg">
+				<p><b> Suitable for 1+ trashings </b></p>
+				<p>5 party poppers, 1 party hat, 1 necklace, 2l of conffetti, and a blowout.</p><br>
 
-				</div><!-- col-lg-4 -->
+				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="MATTBCBFZ34ZQ">
+					<table class="paypaltable">
+					<tr><td><input type="hidden" name="on0" value="Delivery Option:">Delivery Option:</td></tr><tr><td><select name="os0">
+						<option value="Next day delivery">Next day delivery £5.00 GBP</option>
+						<option value="Same day delivery">Same day delivery £7.00 GBP</option>
+					</select> </td></tr>
+					</table>
+					<input type="hidden" name="currency_code" value="GBP">
+					<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+				</form>
 
-				<div class="col-lg-4">
-					<h2>SCHOLAR  3+</h2>
-					<img class="pack" src="./assets/img/packs/scholar.jpg">
-					<p><b> Suitable for 3+ trashings </b></p>
-					<p>15 party poppers, 3 party hats, 3 necklaces, 2l of conffetti, 3 blowouts, a watergun, and 2 cans of silly string.</p>
+			</div><!-- col-lg-4 -->
 
-				</div><!-- col-lg-4 -->
+			<div class="col-lg-4 callout">
+				<h2>SCHOLAR  3+</h2>
+				<img class="pack" src="./assets/img/packs/scholar.jpg">
+				<p><b> Suitable for 3+ trashings </b></p>
+				<p>15 party poppers, 3 party hats, 3 necklaces, 2l of conffetti, 3 blowouts, a watergun, and 2 cans of silly string.</p>
 
-				<div class="col-lg-4">
-					<h2>DON  5+</h2>
-					<img class="pack" src="./assets/img/packs/don.jpg">
-					<p><b> Suitable for 5+ trashings </b></p>
-					<p>25 party poppers, 5 party hats, 5 necklaces, 4l of conffetti, 4 blowouts, 2 waterguns, and 2 cans of silly string.</p>
+				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="DWEBGDUW69E76">
+					<table class="paypaltable">
+					<tr><td><input type="hidden" name="on0" value="Delivery Option:">Delivery Option:</td></tr><tr><td><select name="os0">
+						<option value="Next day delivery">Next day delivery £10.00 GBP</option>
+						<option value="Same day delivery">Same day delivery £12.00 GBP</option>
+					</select> </td></tr>
+					</table>
+					<input type="hidden" name="currency_code" value="GBP">
+					<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+				</form>
 
-				</div><!-- col-lg-4 -->
-			</div><!-- row -->
+			</div><!-- col-lg-4 -->
 
-			<div class="row">
-				<div class="col-lg-4 callout">
-					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="MATTBCBFZ34ZQ">
-						<table class="paypaltable">
-						<tr><td><input type="hidden" name="on0" value="Delivery Option:">Delivery Option:</td></tr><tr><td><select name="os0">
-							<option value="Next day delivery">Next day delivery £5.00 GBP</option>
-							<option value="Same day delivery">Same day delivery £7.00 GBP</option>
-						</select> </td></tr>
-						</table>
-						<input type="hidden" name="currency_code" value="GBP">
-						<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-					</form>
+			<div class="col-lg-4 callout">
+				<h2>DON  5+</h2>
+				<img class="pack" src="./assets/img/packs/don.jpg">
+				<p><b> Suitable for 5+ trashings </b></p>
+				<p>25 party poppers, 5 party hats, 5 necklaces, 4l of conffetti, 4 blowouts, 2 waterguns, and 2 cans of silly string.</p>
 
-				</div><!-- col-lg-4 -->
+				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="GY5VMG65T3D64">
+					<table class="paypaltable">
+					<tr><td><input type="hidden" name="on0" value="Delivery Option:">Delivery Option:</td></tr><tr><td><select name="os0">
+						<option value="Next day delivery">Next day delivery £15.00 GBP</option>
+						<option value="Same day delivery">Same day delivery £17.00 GBP</option>
+					</select> </td></tr>
+					</table>
+					<input type="hidden" name="currency_code" value="GBP">
+					<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+				</form>
 
-				<div class="col-lg-4 callout">
-					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="DWEBGDUW69E76">
-						<table class="paypaltable">
-						<tr><td><input type="hidden" name="on0" value="Delivery Option:">Delivery Option:</td></tr><tr><td><select name="os0">
-							<option value="Next day delivery">Next day delivery £10.00 GBP</option>
-							<option value="Same day delivery">Same day delivery £12.00 GBP</option>
-						</select> </td></tr>
-						</table>
-						<input type="hidden" name="currency_code" value="GBP">
-						<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-					</form>
-
-				</div><!-- col-lg-4 -->
-
-				<div class="col-lg-4 callout">
-					<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="GY5VMG65T3D64">
-						<table class="paypaltable">
-						<tr><td><input type="hidden" name="on0" value="Delivery Option:">Delivery Option:</td></tr><tr><td><select name="os0">
-							<option value="Next day delivery">Next day delivery £15.00 GBP</option>
-							<option value="Same day delivery">Same day delivery £17.00 GBP</option>
-						</select> </td></tr>
-						</table>
-						<input type="hidden" name="currency_code" value="GBP">
-						<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-					</form>
-				</div><!-- col-lg-4 -->	
-			</div><!-- row -->
+			</div><!-- col-lg-4 -->
 		</div><!-- row -->
 	</div><!-- container -->
 
-	<!-- ==== GREYWRAP ==== -->
-	<div id="greywrap">
+	<!-- ==== HOW IT WORKS ==== -->
+	<div class="greywrap" name="how" id="how">
 		<div class="row">
+			<h1 class="centered">HOW IT WORKS</h1>
+			<hr>
+			<br>
+
 			<div class="col-lg-4 callout">
 				<span class="icon icon-numbered-list"></span>
 				<h2>Simple</h2>
@@ -192,16 +183,31 @@
 		</div><!-- container -->
 	</section><!-- section -->
 
-	<!-- ==== SECTION DIVIDER2 -->
+	<!-- ==== TESTIMONIALS ==== -->
+	<div class="container" id="testimonials" name="testimonials">
+	<br>
+		<div class="row">
+			<br>
+			<h1 class="centered">TESTIMONIALS</h1>
+			<hr>
+			<br>
+			<br>
+		</div><!-- /row -->
+		
+		<br>
+		<br>
+	</div><!-- /container -->
+
+	<!-- ==== TWITTER FEED -->
 	<section class="section-divider textdivider divider2">
 		<div class="container">
-			<h1>DESIGN EXPAND BOUNDARIES</h1>
+			<h1>#TRASHINGME - SHARE YOUR STORY</h1>
 			<hr>
-			<p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
+			<div id="tweets"></div>
 		</div><!-- container -->
 	</section><!-- section -->
 
-	<!-- ==== SERVICES ==== -->
+	<!-- ==== TEAM ==== -->
 	<div class="container" id="team" name="team">
 		<br>
 			<div class="row white centered">
@@ -251,7 +257,7 @@
 			<br>
 			<div class="col-lg-4">
 				<h3>Contact Information</h3>
-				<p><span class="icon icon-envelop"></span> <a href="mailto:bighead@trashing.me"> bighead@btrashing.me</a> <br/>
+				<p><span class="icon icon-envelop"></span> <a href="mailto:bighead@trashing.me"> bighead@trashing.me</a> <br/>
 					<span class="icon icon-twitter"></span> <a href="http://www.twitter.com/trashingme"> @TrashingMe </a> <br/>
 					<span class="icon icon-instagram"></span> <a href="http://www.instagram.com/trashingme"> @TrashingMe </a> <br/>
 					<span class="icon icon-facebook"></span> <a href="#"> Trashing.Me </a> <br/>
@@ -299,128 +305,6 @@
 
 	</div><!-- container -->
 
-	<!-- ==== PORTFOLIO ==== -->
-		<div class="container" id="portfolio" name="portfolio">
-		<br>
-			<div class="row">
-				<br>
-				<h1 class="centered">WE CREATE COOL STUFF</h1>
-				<hr>
-				<br>
-				<br>
-			</div><!-- /row -->
-			<div class="container">
-			<div class="row">	
-			
-				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt="">
-							<figcaption>
-								<h5>DASHBOARD</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				
-						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
-						      a modal for each of your projects. -->
-						      
-						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Project Title</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/folio01.jpg" alt=""></p>
-						          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
-						          <p><b><a href="#">Visit Site</a></b></p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-				
-				
-				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio02.jpg" alt="">
-							<figcaption>
-								<h5>UI DESIGN</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio03.jpg" alt="">
-							<figcaption>
-								<h5>ANDROID PAGE</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-
-				<!-- PORTFOLIO IMAGE 4 -->
-			<div class="row">	
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio04.jpg" alt="">
-							<figcaption>
-								<h5>PROFILE</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 5 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio05.jpg" alt="">
-							<figcaption>
-								<h5>TWITTER STATUS</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 6 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/folio06.jpg" alt="">
-							<figcaption>
-								<h5>PHONE MOCKUP</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-			<br>
-			<br>
-		</div><!-- /row -->
-	</div><!-- /container -->
-
 	<div id="footerwrap">
 		<div class="container">
 			<h4>Copyright of Trashing.Me 2014</h4>
@@ -440,5 +324,6 @@
 	<script type="text/javascript" src="assets/js/drupal.js"></script>
 	<script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
 	<script type="text/javascript" src="assets/js/js__iM1MhrzOKnXMvEJ14JzqUB4lqFk_aThINKTPqwdC9M.js"></script>
+	<script type="text/javascript" src="assets/js/twitterfetcher.js"></script>
   </body>
 </html>
