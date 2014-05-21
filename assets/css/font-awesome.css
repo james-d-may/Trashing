@@ -1970,7 +1970,6 @@ audio:not([controls]) {
 }
 
 html {
-    font-family: "cantarell",Arial,Helvetica,"Nimbus Sans L",sans-serif;
     font-size: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -2424,7 +2423,7 @@ a {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.3;
     display: block;
     margin: 0;
@@ -2446,13 +2445,13 @@ h1 {
 
 h2 {
     color: #003e5f;
-    font-size: 2.2em;
+    font-size: 2.8em;
     margin: 0 0 0.5em 0;
 }
 
 h3 {
     color: #2b3338;
-    font-size: 1.3em;
+    font-size: 1.7em;
     margin: 2em 0 0.5em 0;
     font-weight: bold;
 }
@@ -3312,7 +3311,7 @@ body.header-image .page-title-wrapper h1,body.header-image .slideblock h1,body.f
     letter-spacing: 1px;
     line-height: 1.18182;
     margin: 0 auto 10px;
-    font-size: 2em;
+    font-size: 2.4em;
     font-weight: normal;
 }
 
@@ -3349,7 +3348,7 @@ body.header-image .page-title-wrapper h2,body.header-image .slideblock h2,body.f
 @media (min-width:768px) {
     body.header-image .page-title-wrapper h2,body.header-image .slideblock h2,body.front .page-title-wrapper h2,body.front .slideblock h2 {
         margin: 0 auto;
-        font-size: 1.4em;
+        font-size: 1.8em;
         line-height: 1.5875em;
         max-width: 70%;
         margin: -5px auto;
