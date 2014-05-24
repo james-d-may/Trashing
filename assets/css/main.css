@@ -8,6 +8,26 @@
  * URL: http://blacktie.co/
  */
 
+.border {
+    border-width: 5px;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+ #thanks {
+    border-width: 5px;
+    border-color: orange;
+    border-style: solid;
+    border-radius: 20px;
+    max-width: 900px;
+ }
+
+ #thankslogo {
+    max-width: 400px;
+    width: 100%;
+ }
+
 .pack {
     width: 80%;
     
