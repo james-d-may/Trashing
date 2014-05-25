@@ -281,10 +281,6 @@ a {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-.sale {
-    background-color: orange;
-}
-
 a:hover,
 a:focus {
     color: #c0392b;
@@ -359,6 +355,18 @@ a:after {
 	padding-top: 40px;
 	border-bottom: 1px solid #ddd;
 	text-align: center;
+}
+
+.orangewrap {
+    background: orange;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.orangewrap h1 {
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 .greywrap .callout {
