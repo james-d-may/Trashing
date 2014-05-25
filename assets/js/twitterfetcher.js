@@ -103,7 +103,10 @@ var twitterFetcher = function () {
                 e = c.length;
                 g = 0;
                 f = document.getElementById(y);
-                for (h = "<div class='row'>"; g < e;) h += "<div class='col-md-4 col-centered'>" + c[g] + "</div>", g++;
+                for (h = "<div class='row'>"; g < e;) {
+                    var width = (12/e).toString();
+                    h += "<div class='col-md-"+ width +"'>" + c[g] + "</div>", g++;
+                }
                 f.innerHTML = h + "</ul>"
             } else w(c);
             t = !1;
