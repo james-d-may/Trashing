@@ -669,6 +669,10 @@ form {
     padding-bottom: 20px;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 .col-centered {
     float: none;
     margin: 0 auto;
