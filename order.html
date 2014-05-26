@@ -1,141 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A one stop shop for trashing materials. If you go to Oxford University and it's Trinity Term get your confetti, silly string, party poppers and more right here">
-    <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A one stop shop for trashing materials. If you go to Oxford University and it's Trinity Term get your confetti, silly string, party poppers and more right here">
+  <meta name="author" content="Carlos Alvarez - Alvarez.is - blacktie.co">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>Trashing.Me - Trashing supplies for Oxford students - Trinity Term 2014</title>
+  <title>Trashing.Me - Trashing supplies for Oxford students - Trinity Term 2014</title>
 
-    <link rel="stylesheet" href="assets/css/font-awesome.css" media="all">
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/font-awesome.css" media="all">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <!-- Custom styles for this template -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-    <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/order.js"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
+</head>
 
-  <body>
+<body class="container centered">
 
-    <div class="container centered">
+  <!-- ORDER DETAILS -->
+  <div class="row">
+    <h1>Order details</h1>
+
+    <div id="order-detail" class="col-md-offset-1 col-md-10 border">
       <div class="row">
-        <h1>Delivery Details</h1>
+        <div id="description" class="col-md-8">
+        </div>
 
-        <div class="col-sm-10 col-md-offset-1 border">
-
-          <div class="orderformitem">
-            <label for="entry_1962777193">Name</label>
-            <input type="text" name="entry.1962777193" value="" id="entry_1962777193">
-          </div>
-
-          <div class="orderformitem">
-            <label for="entry_811397731">College</label>
-            <select name="entry.811397731" id="entry_811397731">
-              <option value=""></option>
-              <option value="All Souls College">All Souls College</option>
-              <option value="Balliol College">Balliol College</option>
-              <option value="Blackfriars">Blackfriars</option>
-              <option value="Brasenose College">Brasenose College</option>
-              <option value="Campion Hall">Campion Hall</option>
-              <option value="Christ Church">Christ Church</option>
-              <option value="Corpus Christi College">Corpus Christi College</option>
-              <option value="Exeter College">Exeter College</option>
-              <option value="Green Templeton College">Green Templeton College</option>
-              <option value="Harris Manchester College">Harris Manchester College</option>
-              <option value="Hertford College">Hertford College</option>
-              <option value="Jesus College">Jesus College</option>
-              <option value="Keble College">Keble College</option>
-              <option value="Kellogg College">Kellogg College</option>
-              <option value="Lady Margaret Hall">Lady Margaret Hall</option>
-              <option value="Linacre College">Linacre College</option>
-              <option value="Lincoln College">Lincoln College</option>
-              <option value="Magdalen College">Magdalen College</option>
-              <option value="Mansfield College">Mansfield College</option>
-              <option value="Merton College">Merton College</option>
-              <option value="New College">New College</option>
-              <option value="Nuffield College">Nuffield College</option>
-              <option value="Oriel College">Oriel College</option>
-              <option value="Pembroke College">Pembroke College</option>
-              <option value="The Queen's College">The Queen's College</option>
-              <option value="Regent's Park College">Regent's Park College</option>
-              <option value="St Anne's College">St Anne's College</option>
-              <option value="St Antony's College">St Antony's College</option>
-              <option value="St Benet's Hall">St Benet's Hall</option>
-              <option value="St Catherine's College">St Catherine's College</option>
-              <option value="St Cross College">St Cross College</option>
-              <option value="St Edmund Hall">St Edmund Hall</option>
-              <option value="St Hilda's College">St Hilda's College</option>
-              <option value="St Hugh's College">St Hugh's College</option>
-              <option value="St John's College">St John's College</option>
-              <option value="St Peter's College">St Peter's College</option>
-              <option value="St Stephen's House">St Stephen's House</option>
-              <option value="Somerville College">Somerville College</option>
-              <option value="Trinity College">Trinity College</option>
-              <option value="University College">University College</option>
-              <option value="Wadham College">Wadham College</option>
-              <option value="Wolfson College">Wolfson College</option>
-              <option value="Worcester College">Worcester College</option>
-              <option value="Wycliffe Hall">Wycliffe Hall</option>
-            </select>
-          </div>
-
-          <div class="orderformitem">
-            <label class="ss-q-item-label" for="entry_1306247825">Coupon Code (Optional)</label>
-            <input type="text" name="entry.1306247825" id="entry_1306247825">
-          </div>
+        <div class="col-md-4">
+          <img id="photo" class="pack" style="padding-top: 20px;">
         </div>
       </div>
 
-      <div class="row">
-        <br><br>
-        <div class="col-sm-5 col-sm-offset-1">
-          <h2>Buy online with pidge delivery.</h2>
+    </div>
+  </div> <!-- end row -->
 
-          <div class="border">
-            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="EYAGG7STURGDN">
-              <table class="paypaltable">
-              <tr><td><input type="hidden" name="on0" value="Pack Size:">Pack Size:</td></tr><tr><td><select name="os0">
-                  <option value="Commoner">Commoner £5.00 GBP</option>
-                  <option value="Scholar">Scholar £10.00 GBP</option>
-                  <option value="Don">Don £15.00 GBP</option>
-              </select> </td></tr>
-              </table>
-              <input type="hidden" name="currency_code" value="GBP">
-              <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_cart_LG.gif" border="0" name="submit">
-            </form>
-          </div>
-        </div>
+  <div class="row">
+    <br>
+    <div class="col-sm-5 col-sm-offset-1">
+      <h2>Buy online</h2>
+      <h3>next day pidge delivery</h3>
 
-        <div class="col-sm-5">
-          <h2>Reserve and pay in person.</h2>
+      <div class="border">
+        <p>Place an order online and we will deliver it directly to your
+           college pidge before 11:30am the following day. If you need it
+           any quicker, or if you require delivery at a location outside the
+           college, choose to Reserve and Pay in person.
+        </p>
 
-          <div class="border">
-            <div class="orderformitem">
-              <label for="entry_37031659">Mobile Number</label>
-              <input type="text" name="entry.37031659" id="entry_37031659">
-            </div>
 
-            <input class="btn btn-warning" type="submit" name="submit" value="Submit">
-            <br><br>
-          </div>
-        </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input id="paypal-code" type="hidden" name="hosted_button_id">
+            <table>
+              <tr>
+                <td>
+                  <input type="hidden" name="on0" value="Your college">
+                  Your college
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select name="os0" required>
+                    <option value=""></option>
+                    <option value="All Souls College">All Souls College</option>
+                    <option value="Balliol College">Balliol College</option>
+                    <option value="Blackfriars">Blackfriars</option>
+                    <option value="Brasenose College">Brasenose College</option>
+                    <option value="Campion Hall">Campion Hall</option>
+                    <option value="Christ Church">Christ Church</option>
+                    <option value="Corpus Christi College">Corpus Christi College</option>
+                    <option value="Exeter College">Exeter College</option>
+                    <option value="Green Templeton College">Green Templeton College</option>
+                    <option value="Harris Manchester College">Harris Manchester College</option>
+                    <option value="Hertford College">Hertford College</option>
+                    <option value="Jesus College">Jesus College</option>
+                    <option value="Keble College">Keble College</option>
+                    <option value="Kellogg College">Kellogg College</option>
+                    <option value="Lady Margaret Hall">Lady Margaret Hall</option>
+                    <option value="Linacre College">Linacre College</option>
+                    <option value="Lincoln College">Lincoln College</option>
+                    <option value="Magdalen College">Magdalen College</option>
+                    <option value="Mansfield College">Mansfield College</option>
+                    <option value="Merton College">Merton College</option>
+                    <option value="New College">New College</option>
+                    <option value="Nuffield College">Nuffield College</option>
+                    <option value="Oriel College">Oriel College</option>
+                    <option value="Pembroke College">Pembroke College</option>
+                    <option value="The Queen's College">The Queen's College</option>
+                    <option value="Regent's Park College">Regent's Park College</option>
+                    <option value="St Anne's College">St Anne's College</option>
+                    <option value="St Antony's College">St Antony's College</option>
+                    <option value="St Benet's Hall">St Benet's Hall</option>
+                    <option value="St Catherine's College">St Catherine's College</option>
+                    <option value="St Cross College">St Cross College</option>
+                    <option value="St Edmund Hall">St Edmund Hall</option>
+                    <option value="St Hilda's College">St Hilda's College</option>
+                    <option value="St Hugh's College">St Hugh's College</option>
+                    <option value="St John's College">St John's College</option>
+                    <option value="St Peter's College">St Peter's College</option>
+                    <option value="St Stephen's House">St Stephen's House</option>
+                    <option value="Somerville College">Somerville College</option>
+                    <option value="Trinity College">Trinity College</option>
+                    <option value="University College">University College</option>
+                    <option value="Wadham College">Wadham College</option>
+                    <option value="Wolfson College">Wolfson College</option>
+                    <option value="Worcester College">Worcester College</option>
+                    <option value="Wycliffe Hall">Wycliffe Hall</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <input type="submit" class="btn btn-default" border="0" name="submit" value="Pay with paypal">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+          </form>
       </div>
     </div>
 
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  </body>
+    <div class="col-sm-5">
+      <h2>Reserve</h2>
+      <h3>collect and pay in person</h3>
+
+      <div class="border">
+        <p>Reserve a trashing bag  and we aim to call within 30 mins of
+           placing the order to arrange a convenient time and location to pay.
+        </p>
+
+        <div class="orderformitem">
+          <label for="entry_37031659">Mobile Number</label>
+          <input type="text" name="entry.37031659" id="entry_37031659">
+        </div>
+
+        <input class="btn btn-warning" type="submit" name="submit" value="Submit">
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
 </html>
