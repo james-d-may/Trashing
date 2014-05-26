@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>Button Example Code</title>
+
+<!-- START META TAG SECTION -->
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="Content-Language" content="en">
+<!-- END META TAG SECTION -->
+
+
+<!-- Start of Script -->	  
+<script language = "javascript">
+<!--
+function validate(text1,text2) {
+
+if (text1 == text2)
+ {
+ window.alert("Nice, you get a 10% Discount!");
+ }
+if (text1 !== text2)
+ {
+ window.alert("Sorry, No Discount!");
+ }
+}
+
+function CalculateOrder(form) {
+
+ if (form.text1.value == "GOLD10")
+ {
+ form.discount_rate.value = "10";
+ form.discount_rate2.value = "10";
+ form.on3.value = "Coupon Entered";
+ form.os3.value = "GOLD10";
+ }
+}
+//-->
+</script>
+<!-- End of Script -->
+
+
+</head>
+
+<body>
+
+<!-- START SAMPLE CODE SECTION -->
+
+
+<!-- PARAGRAPH 1 -->
+Discount &amp; Coupon Examples
+
+<br><br>
+
+Add to Cart - Enter the Promo Coupon Code, Get a 10% Discount, on Screen Validation.
+
+<br><br>
+
+Notes:<br>
+This example uses a script to verify the Promo Coupon Code and then applies the associated Discount Rate using the the &quot;discount_rate&quot; and the &quot;discount_rate2&quot; variables.
+<br><br>
+Give it a try, the Promo Coupon Code is:&nbsp;&nbsp; GOLD10 
+
+<br><br>
+
+
+<!-- START CONTENTS -->
+
+<!-- START BUTTON EXAMPLES -->
+
+
+Widgets in Space
+
+<br><br>
+ 
+Widget Cupcakes
+
+<br><br>
+
+
+<!-- Start of Add to Cart Form -->
+<!-- Note: target="paypal" was replaced with the variable target="_self" -->
+<!-- Note: shopping_url also added to code -->
+<!-- These two changes allow better functionality with IE and Firefox --> 
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable in your View Cart code. -->
+<input type="hidden" name="cpp_header_image" value="https://yourwebsite.com/logo.jpg"> 
+
+Please Choose:&#160;&#160;
+<input type="hidden" name="on0" value="Choice">
+<select name="os0">
+<option value="Standard, 6 each per Box" selected>Standard, 6 each per Box - $9.95</option>
+<option value="Standard, 12 each per Box">Standard, 12 each per Box - $16.95</option>
+<option value="Deluxe, 6 each per Box">Deluxe, 6 each per Box - $12.95</option>
+<option value="Deluxe, 12 each per Box">Deluxe, 12 each per Box - $22.95</option>
+</select>
+
+
+<!-- option_index value=0 is associated with variable on0 -->
+<!-- option_index value=1 is associated with variable on1 -->
+<input type="hidden" name="option_index" value="0">
+<!-- -->
+<input type="hidden" name="option_select0" value="Standard, 6 each per Box">
+<input type="hidden" name="option_amount0" value="9.95">
+<input type="hidden" name="option_item_number0" value="S-6-BOX">
+<!-- -->
+<input type="hidden" name="option_select1" value="Standard, 12 each per Box">
+<input type="hidden" name="option_amount1" value="16.95">
+<input type="hidden" name="option_item_number1" value="S-12-BOX">
+<!-- -->
+<input type="hidden" name="option_select2" value="Deluxe, 6 each per Box">
+<input type="hidden" name="option_amount2" value="12.95">
+<input type="hidden" name="option_item_number2" value="D-6-BOX">
+<!-- -->
+<input type="hidden" name="option_select3" value="Deluxe, 12 each per Box">
+<input type="hidden" name="option_amount3" value="22.95">
+<input type="hidden" name="option_item_number3" value="D-12-BOX">
+<!-- -->
+
+
+
+<br><br>
+Cupcake Flavors:&#160;&#160;
+<input type="hidden" name="on1" value="Flavor">
+<select name="os1">
+<option value="Vanilla Dream" selected>Vanilla Dream</option>
+<option value="Berry Burst">Berry Burst</option>
+<option value="Chocolicious">Chocolicious</option>
+<option value="Carrot Passion">Carrot Passion</option>
+<option value="Banana Karma">Banana Karma</option>
+<option value="Mocha-Chococcino">Mocha-Chococcino</option>
+</select>
+
+<br><br>
+Optional Gift Message:&#160;&#160;
+<input type="hidden" name="on2" value="Optional Gift Message">
+<input type="text" name="os2" maxlength="60">
+
+<br><br>
+<!-- Start Coupon Validate -->	
+Enter Promo Coupon - Get 10% Off:
+&#160;&#160;&#160;
+<input type="text" name="text1">
+<input type="button" value="Check It" name="Submit" onclick=javascript&colon;validate(text1.value,"GOLD10") >
+<!-- End Coupon Validate -->
+
+<br><br><br>
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" onclick=CalculateOrder(this.form) name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="add" value="1">
+<input type="hidden" name="cmd" value="_cart">
+<!-- Replace "business" value with your PayPal Email Address or Account ID -->
+<input type="hidden" name="business" value="your email address">
+<input type="hidden" name="item_name" value="Widget Cupcakes">
+<input type="hidden" name="no_shipping" value="2">
+<input type="hidden" name="discount_rate">
+<input type="hidden" name="discount_rate2">
+<input type="hidden" name="on3">
+<input type="hidden" name="os3">
+<!-- Replace value with the web page you want the customer to return to -->
+<input type="hidden" name="shopping_url" value="http://www.yourwebsite.com/Shop.html">
+<!-- Replace value with the web page you want the customer to return to after a successful transaction -->
+<input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html">
+<!-- Replace value with the web page you want the customer to return to after item cancellation -->
+<input type="hidden" name="cancel_return" value="http://www.yourwebsite.com/Cancel.html">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="button_subtype" value="products">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="cn" value="Add special instructions to the seller:">
+<input type="hidden" name="bn" value="PP-ShopCartBF:btn_cart_LG.gif:NonHosted">
+</form>
+<!-- End Add to Cart Button Code -->	
+
+<br>
+
+<!--  Start of View Cart Button Code  -->
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable in your View Cart code. -->
+<input type="hidden" name="cpp_header_image" value="https://yourwebsite.com/logo.jpg"> 
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="display" value="1">
+<!-- Replace "business" value with your PayPal Email Address or Account ID -->
+<input type="hidden" name="business" value="your email address">
+<!-- Replace value with the web page you want the customer to return to -->
+<input type="hidden" name="shopping_url" value="http://www.yourwebsite.com/Shop.html">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form> 
+<!--  End of View Cart Button Code  -->
+
+
+
+
+<!-- END BUTTON EXAMPLES -->
+
+
+
+<!-- END SAMPLE CODE SECTION -->
+
+<br><br>
+
+
+<br><br><br><br>
+<hr align="left" width="50%" noshade>
+<br><br>
+NOTES:
+<br>
+In order to test the code, you must replace the &quot;business&quot; value variable with your PayPal Email Address or Account ID in both the View Cart button and the Add to Cart button.
+
+
+</body>
+</html>
