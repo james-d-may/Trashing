@@ -392,7 +392,11 @@ a:after {
 	letter-spacing: 1px;
 }
 
-.greywrap h1, h2 {
+.greywrap h1 {
+  margin: 0;
+}
+
+.greywrap h2 {
   margin: 0;
 }
 
