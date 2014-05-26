@@ -1,3 +1,4 @@
+// Grab the query string parameters. (the customer pack selected on index.html)
 var QueryString = function () {
   // This function is anonymous, is executed immediately and
   // the return value is assigned to QueryString!
@@ -21,10 +22,15 @@ var QueryString = function () {
     return query_string;
 } ();
 
+// Each pack's information to be loaded dynamically based on user choice
 var packs = {
   commoner  : { paypal_full :"GSF95ETJ38UG6",
                 price_full : 7,
                 paypal_reduced : "MHVB9E9EYLGXL",
+                price_reduced : 5,
+                img_src:"./assets/img/packs/commoner2.jpg"},
+  commoner_test:
+              { paypal_reduced : "ZBBGKJTFCXGMC",
                 price_reduced : 5,
                 img_src:"./assets/img/packs/commoner2.jpg"},
   scholar   : { paypal_full :"ECLP53ULF7JC4",
@@ -32,13 +38,14 @@ var packs = {
                 paypal_reduced : "MMDFB5943LCLA",
                 price_reduced : 10,
                 img_src:"./assets/img/packs/scholar.jpg"},
-  don       : { paypal_full :"9GFQKF6W4LEC6",
+  don       : { paypal_full :"LG2HZ5N5VLY3W",
                 price_full : 20,
                 paypal_reduced : "24FSN4XCEZETL",
                 price_reduced : 15,
                 img_src:"./assets/img/packs/don.jpg"}
 }
 
+// Load pack information on load
 $(function() {
   var pack = packs[QueryString.pack];
 
