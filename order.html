@@ -55,77 +55,66 @@
 
       <div class="border">
         <p>Place an order online and we will deliver it directly to your
-           college pidge before 11:30am the following day. If you need it
-           any quicker, or if you require delivery at a location outside the
-           college, choose to Reserve and Pay in person.
-        </p>
+           college pidge before 11:30am the following day.</p>
 
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input id="paypal-code" type="hidden" name="hosted_button_id">
 
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input id="paypal-code" type="hidden" name="hosted_button_id">
-            <table>
-              <tr>
-                <td>
-                  <input type="hidden" name="on0" value="Your college">
-                  Your college
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <select name="os0" required>
-                    <option value=""></option>
-                    <option value="All Souls College">All Souls College</option>
-                    <option value="Balliol College">Balliol College</option>
-                    <option value="Blackfriars">Blackfriars</option>
-                    <option value="Brasenose College">Brasenose College</option>
-                    <option value="Campion Hall">Campion Hall</option>
-                    <option value="Christ Church">Christ Church</option>
-                    <option value="Corpus Christi College">Corpus Christi College</option>
-                    <option value="Exeter College">Exeter College</option>
-                    <option value="Green Templeton College">Green Templeton College</option>
-                    <option value="Harris Manchester College">Harris Manchester College</option>
-                    <option value="Hertford College">Hertford College</option>
-                    <option value="Jesus College">Jesus College</option>
-                    <option value="Keble College">Keble College</option>
-                    <option value="Kellogg College">Kellogg College</option>
-                    <option value="Lady Margaret Hall">Lady Margaret Hall</option>
-                    <option value="Linacre College">Linacre College</option>
-                    <option value="Lincoln College">Lincoln College</option>
-                    <option value="Magdalen College">Magdalen College</option>
-                    <option value="Mansfield College">Mansfield College</option>
-                    <option value="Merton College">Merton College</option>
-                    <option value="New College">New College</option>
-                    <option value="Nuffield College">Nuffield College</option>
-                    <option value="Oriel College">Oriel College</option>
-                    <option value="Pembroke College">Pembroke College</option>
-                    <option value="The Queen's College">The Queen's College</option>
-                    <option value="Regent's Park College">Regent's Park College</option>
-                    <option value="St Anne's College">St Anne's College</option>
-                    <option value="St Antony's College">St Antony's College</option>
-                    <option value="St Benet's Hall">St Benet's Hall</option>
-                    <option value="St Catherine's College">St Catherine's College</option>
-                    <option value="St Cross College">St Cross College</option>
-                    <option value="St Edmund Hall">St Edmund Hall</option>
-                    <option value="St Hilda's College">St Hilda's College</option>
-                    <option value="St Hugh's College">St Hugh's College</option>
-                    <option value="St John's College">St John's College</option>
-                    <option value="St Peter's College">St Peter's College</option>
-                    <option value="St Stephen's House">St Stephen's House</option>
-                    <option value="Somerville College">Somerville College</option>
-                    <option value="Trinity College">Trinity College</option>
-                    <option value="University College">University College</option>
-                    <option value="Wadham College">Wadham College</option>
-                    <option value="Wolfson College">Wolfson College</option>
-                    <option value="Worcester College">Worcester College</option>
-                    <option value="Wycliffe Hall">Wycliffe Hall</option>
-                  </select>
-                </td>
-              </tr>
-            </table>
-            <input type="submit" class="btn btn-default" border="0" name="submit" value="Pay with paypal">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-          </form>
+                <input type="hidden" name="on0" value="College">
+                Pidge to college:
+
+                <select name="os0" required>
+                  <option value=""></option>
+                  <option value="All Souls">All Souls</option>
+                  <option value="Balliol">Balliol</option>
+                  <option value="Blackfriars">Blackfriars</option>
+                  <option value="Brasenose">Brasenose</option>
+                  <option value="Campion Hall">Campion Hall</option>
+                  <option value="Christ Church">Christ Church</option>
+                  <option value="Corpus Christi">Corpus Christi</option>
+                  <option value="Exeter">Exeter</option>
+                  <option value="Green Templeton">Green Templeton</option>
+                  <option value="Harris Manchester">Harris Manchester</option>
+                  <option value="Hertford">Hertford</option>
+                  <option value="Jesus">Jesus</option>
+                  <option value="Keble">Keble</option>
+                  <option value="Kellogg">Kellogg</option>
+                  <option value="Lady Margaret Hall">Lady Margaret Hall</option>
+                  <option value="Linacre">Linacre</option>
+                  <option value="Lincoln">Lincoln</option>
+                  <option value="Magdalen">Magdalen</option>
+                  <option value="Mansfield">Mansfield</option>
+                  <option value="Merton">Merton</option>
+                  <option value="New">New</option>
+                  <option value="Nuffield">Nuffield</option>
+                  <option value="Oriel">Oriel</option>
+                  <option value="Pembroke">Pembroke</option>
+                  <option value="Queen's">Queen's</option>
+                  <option value="Regent's Park">Regent's Park</option>
+                  <option value="St Anne's">St Anne's</option>
+                  <option value="St Antony's">St Antony's</option>
+                  <option value="St Benet's Hall">St Benet's Hall</option>
+                  <option value="St Catherine's">St Catherine's</option>
+                  <option value="St Cross">St Cross</option>
+                  <option value="St Edmund Hall">St Edmund Hall</option>
+                  <option value="St Hilda's">St Hilda's</option>
+                  <option value="St Hugh's">St Hugh's</option>
+                  <option value="St John's">St John's</option>
+                  <option value="St Peter's">St Peter's</option>
+                  <option value="St Stephen's House">St Stephen's House</option>
+                  <option value="Somerville">Somerville</option>
+                  <option value="Trinity">Trinity</option>
+                  <option value="University">University</option>
+                  <option value="Wadham">Wadham</option>
+                  <option value="Wolfson">Wolfson</option>
+                  <option value="Worcester">Worcester</option>
+                  <option value="Wycliffe Hall">Wycliffe Hall</option>
+                </select>
+
+          <input type="submit" class="btn btn-default" border="0" name="submit" value="Pay with paypal">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
       </div>
     </div>
 
