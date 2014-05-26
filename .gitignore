@@ -4,3 +4,11 @@ assets/.DS_Store
 assets/img/.DS_Store
 
 assets/js/.DS_Store
+
+*.db
+
+assets/img/bg/.DS_Store
+
+.DS_Store
+
+assets/img/team/.DS_Store
