@@ -478,7 +478,12 @@ a:after {
 }
 
 .divider2 {
-	background-image: url('../img/bg/divider2.jpg')
+	background-image: url('../img/bg/divider2.jpg');
+    padding-bottom: 0px;
+}
+
+.divider2 h1 { 
+    padding-top: 0px;
 }
 
 .divider3 {
