@@ -26,10 +26,10 @@ var QueryString = function () {
 var packs = {
   commoner  : { paypal_full :"GSF95ETJ38UG6",
                 price_full : 7,
-                paypal_reduced : "MHVB9E9EYLGXL",
+                paypal_reduced : "QT4U57ZZ8F8HY",
                 price_reduced : 5,
                 img_src:"./assets/img/packs/commoner2.jpg",
-                inform: "<ul><li>1.75L of Conffetti</li><li>5 Party Poppers</li><li>1 Party Hat</li><li>1 Necklace</li><li>1 Party Blower</li></ul><br><br>"
+                inform: "<ul style='margin-left:20px'><li>1.75L of Conffetti</li><li>5 Party Poppers</li><li>1 Party Hat</li><li>1 Necklace</li><li>1 Party Blower</li></ul><br><br>"
               },
   commoner_test:
               { paypal_reduced : "ZBBGKJTFCXGMC",
@@ -39,15 +39,15 @@ var packs = {
                 price_full : 14,
                 paypal_reduced : "MMDFB5943LCLA",
                 price_reduced : 10,
-                img_src:"./assets/img/packs/scholar.jpg",
-                inform: "<ul><li>2 Silly String Cans</li><li>1.75L of Confetti</li><li>15 Party Poppers</li><li>1 Water Gun</li><li>3 Party Hats</li><li>3 Necklaces</li><li>3 Party Blowers</li></ul>"
+                img_src:"./assets/img/packs/scholar2.jpg",
+                inform: "<ul style='margin-left:20px'><li>2 Silly String Cans</li><li>1.75L of Confetti</li><li>15 Party Poppers</li><li>1 Water Gun</li><li>3 Party Hats</li><li>3 Necklaces</li><li>3 Party Blowers</li></ul>"
               },
   don       : { paypal_full :"LG2HZ5N5VLY3W",
                 price_full : 20,
                 paypal_reduced : "24FSN4XCEZETL",
                 price_reduced : 15,
-                img_src:"./assets/img/packs/don.jpg",
-                inform: "<ul><li>2 Silly String Cans</li><li>3.5L of Conffetti</li><li>2 Water Guns</li><li>25 Party Poppers</li><li>5 Party Hats</li><li>5 Necklaces</li><li>4 Party Blowers</li></ul>"
+                img_src:"./assets/img/packs/don2.jpg",
+                inform: "<ul style='margin-left:20px'><li>2 Silly String Cans</li><li>3.5L of Conffetti</li><li>2 Water Guns</li><li>25 Party Poppers</li><li>5 Party Hats</li><li>5 Necklaces</li><li>4 Party Blowers</li></ul>"
               }
 }
 
@@ -55,7 +55,12 @@ var packs = {
 $(function() {
   var pack = packs[QueryString.pack];
 
+  if (QueryString.ref != undefined) {
+    $("#paypal-ref").attr("value", QueryString.ref)
+  }
+
   $("#photo").attr("src", pack.img_src);
   $("#paypal-code").attr("value", pack.paypal_reduced);
-  document.getElementById('description').innerHTML = pack.inform;
+  document.getElementById('description').innerHTML += pack.inform;
+  document.getElementById('price').innerHTML += "£" + pack.price_reduced;
 });
