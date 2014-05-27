@@ -12,6 +12,10 @@
   padding: 20px;
 }
 
+.order-info{
+    padding: 20px;
+}
+
 .border {
     border-width: 5px;
     border-color: orange;
@@ -121,7 +125,11 @@ body {
     resize: vertical;
 }
 
-.product-info span :not(.glyphicon) {
+#price {
+    font-size: 2em;
+}
+
+.product-info span {
   font-size: 2em;
 }
 

@@ -55,24 +55,31 @@ function checkRef(r) {
   var pack = packs[QueryString.pack];
   var now = new Date();
   var deadline = new Date(2014, 5, 30, 0, 0, 0, 0);
-  var reduced = now < deadline;
+  var reduced = now > deadline;
 
   if (isValid(r)) {
     reduced = true;
     $("#paypal-ref").attr("value", r);
-    console.log("yes");
-    $(".glyphicon-ok").attr("display", "inherit");
-    $(".glyphicon-remove").attr("display", "none");
+    
+    $(".has-feedback").removeClass("has-error").addClass("has-success");
+    $(".glyphicon-ok").removeClass("hidden");
+    $(".glyphicon-remove").addClass("hidden");
 
   } else {
     $("#paypal-ref").attr("value", "");
-    console.log("no");
-    $(".glyphicon-ok").attr("display", "none");
-    $(".glyphicon-remove").attr("display", "inherit");
+    
+    $(".has-feedback").removeClass("has-success").addClass("has-error");
+    $(".glyphicon-ok").addClass("hidden");
+    $(".glyphicon-remove").removeClass("hidden");
+
+    if (r == undefined || r == "") {
+      $(".has-feedback").removeClass("has-error");
+      $(".glyphicon-remove").addClass("hidden");
+    }
   }
     
   $("#paypal-code").attr("value", pack.paypal_reduced);
-  document.getElementById('price').innerHTML +=
+  document.getElementById('price').innerHTML =
     "£" + (reduced ? pack.price_reduced : pack.price_full);
 }
 
@@ -110,6 +117,7 @@ $(function() {
 
   if (QueryString.ref != undefined) {
     $("#refcode").attr("value", QueryString.ref);
-    checkRef(QueryString.ref);
   }
+
+  checkRef(QueryString.ref);
 });
