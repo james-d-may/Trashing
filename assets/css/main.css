@@ -17,6 +17,13 @@
     border-color: orange;
     border-style: solid;
     border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#description {
+  text-align: left;
+  padding-left: 100px;
 }
 
 .orderformitem {
@@ -712,6 +719,12 @@ ul {
 .col-centered {
     float: none;
     margin: 0 auto;
+}
+
+label {
+    clear:left;
+    text-align:right;
+    padding-right:10px;
 }
 
 /* ==========================================================================
