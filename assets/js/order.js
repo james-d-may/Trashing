@@ -51,22 +51,65 @@ var packs = {
               }
 }
 
-// Load pack information on load
-$(function() {
+function checkRef(r) {
+  var pack = packs[QueryString.pack];
   var now = new Date();
   var deadline = new Date(2014, 5, 30, 0, 0, 0, 0);
   var reduced = now < deadline;
 
-  var pack = packs[QueryString.pack];
-
-  if (QueryString.ref != undefined) {
+  if (isValid(r)) {
     reduced = true;
-    $("#paypal-ref").attr("value", QueryString.ref)
-  }
+    $("#paypal-ref").attr("value", r);
+    console.log("yes");
+    $(".glyphicon-ok").attr("display", "inherit");
+    $(".glyphicon-remove").attr("display", "none");
 
-  $("#photo").attr("src", pack.img_src);
+  } else {
+    $("#paypal-ref").attr("value", "");
+    console.log("no");
+    $(".glyphicon-ok").attr("display", "none");
+    $(".glyphicon-remove").attr("display", "inherit");
+  }
+    
   $("#paypal-code").attr("value", pack.paypal_reduced);
-  document.getElementById('description').innerHTML += pack.inform;
   document.getElementById('price').innerHTML +=
     "£" + (reduced ? pack.price_reduced : pack.price_full);
+}
+
+function isValid(r) {
+  if (r == undefined) return false;
+
+  var code = parseInt(r);
+  if (code == NaN) return false;
+  if (!((100000000 <= code) & (code <= 999999999))) return false;
+
+  var cb, bb, tb, b, t;
+  cb = code % 10;
+  bb = Math.floor(code / 10) % 10;
+  tb = Math.floor(code / 100) % 10;
+  if (((tb + bb) % 10) != cb) return false;
+
+  b = Math.floor(code / 1000) % 1000;
+  t = Math.floor(code / 1000000);
+  if (((b % 10) + (Math.floor(b / 10) % 10) + Math.floor(b / 100)) % 10 != bb) return false;
+  if (((t % 10) + (Math.floor(t / 10) % 10) + Math.floor(t / 100)) % 10 != tb) return false;
+
+  return true;
+}
+
+
+// Load pack information on load
+$(function() {
+  var pack = packs[QueryString.pack];
+  $("#photo").attr("src", pack.img_src);
+  document.getElementById('description').innerHTML += pack.inform;
+
+  $('#refcode').bind('input', function() {
+      checkRef($(this).val());
+  });
+
+  if (QueryString.ref != undefined) {
+    $("#refcode").attr("value", QueryString.ref);
+    checkRef(QueryString.ref);
+  }
 });
