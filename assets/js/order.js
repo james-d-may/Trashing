@@ -53,14 +53,20 @@ var packs = {
 
 // Load pack information on load
 $(function() {
+  var now = new Date();
+  var deadline = new Date(2014, 5, 30, 0, 0, 0, 0);
+  var reduced = now < deadline;
+
   var pack = packs[QueryString.pack];
 
   if (QueryString.ref != undefined) {
+    reduced = true;
     $("#paypal-ref").attr("value", QueryString.ref)
   }
 
   $("#photo").attr("src", pack.img_src);
   $("#paypal-code").attr("value", pack.paypal_reduced);
   document.getElementById('description').innerHTML += pack.inform;
-  document.getElementById('price').innerHTML += "£" + pack.price_reduced;
+  document.getElementById('price').innerHTML +=
+    "£" + (reduced ? pack.price_reduced : pack.price_full);
 });
