@@ -28,16 +28,17 @@
 <body class="order container centered">
 
   <!-- ORDER DETAILS -->
-  <div class="product-info row">
-    <h1>Order details</h1>
+  <div class="product-info row" style="padding-top: 0px;padding-bottom: 0px;">
+    <h1 style="margin-top: 5px; margin-bottom: 5px;">
+      Order details</h1>
 
     <div id="order-detail" class="border col-md-offset-1 col-md-10">
       <div class="row">
-        <div id="description" class="description col-md-4">
+        <div id="description" class="description col-md-4" style="padding-bottom: 0px;">
           <h3>Content:</h3>
         </div>
 
-        <div id="price-info" class="col-md-4">
+        <div id="price-info" class="col-md-4" style="padding-bottom: 0px;">
           <h3>Price:</h3>
           <span id="price" style="margin-left:20px"></span>
           <br>
@@ -62,15 +63,16 @@
 
   <div class="row">
     <div class="col-sm-5 col-sm-offset-1">
-      <h2>Buy online</h2>
-      <h3>next day pidge delivery&nbsp;&nbsp;&nbsp;</h3>
+      <h2 style=" margin-top: 0px;margin-bottom: 0px;">
+        Buy online</h2>
+      <h3 style="margin-top: 5px; margin-bottom: 5px;">next day pidge delivery&nbsp;&nbsp;&nbsp;</h3>
 
       <div class="border">
         <p>Place an order online and we will deliver it directly to your
            college pidge before 11:30am the following day.
         </p><br>
 
-        <form class="form-inline" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" role="form">
+        <form class="form-inline" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" role="form" style="padding-bottom: 0px;">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input id="paypal-code" type="hidden" name="hosted_button_id">
           <div class="form-group">
@@ -134,21 +136,21 @@
             <input type="submit" class="btn btn-primary" border="0" name="submit" value="Pay with paypal">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
           </div>
-          <p style="color:grey;font-size:10px;">by paying you are agreeing to the Terms and Conditions</p>
+          
         </form>
       </div>
     </div>
 
     <div class="col-sm-5 ">
-      <h2>Reserve</h2>
-      <h3>collect and pay in person</h3>
+      <h2 style=" margin-top: 0px;margin-bottom: 0px;">Reserve</h2>
+      <h3 style="margin-top: 5px; margin-bottom: 5px;">collect and pay in person</h3>
 
       <div class="border">
         <p>We aim to call within 30 mins of placing the order to arrange a
           convenient time and location to pay.
         </p>
 
-        <form role="form" class="form-inline">
+        <form role="form" class="form-inline" style="padding-bottom: 0px;">
           <div class="form-group">
             <label for="name">Name:</label>
             <input class="form-control" type="text" name="name" id="name">
@@ -164,13 +166,12 @@
             <input class="form-control" type="text" name="phone" id="phone" required>
           </div><br>
 
-          <input class="btn btn-primary" type="submit" name="submit" value="Reserve">
-                  <p style="color:grey;font-size:10px;">by paying you are agreeing to the Terms and Conditions</p>
+          <input class="btn btn-primary" type="submit" name="submit" value="Reserve">                  
         </form>
       </div><!--end border -->
     </div><!-- end col-sm-5 -->
   </div><!-- end row -->
-
+<p style="color:grey;font-size:14px;margin-bottom: 0px;">By buying or reserving any pack you are agreeing to all the <a href="terms.html"> Terms and Conditions</a> specified by Trashing.me</p>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
