@@ -149,6 +149,14 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+input {
+  margin: 5px;
+}
+
+select {
+  margin: 4px;
+}
+
 .col-md-4 {
 	padding-bottom: 20px;
 }
