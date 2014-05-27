@@ -44,6 +44,9 @@
           <span id="price" style="margin-left:20px"></span>
           <br>
           <h3>Referral code:</h3>
+          <form role="form" class="form-inline">
+            <input type="text" id="refcode" class="form-control" name="refcode">
+          </form>
 
         </div>
 
@@ -63,19 +66,20 @@
       <div class="border">
         <p>Place an order online and we will deliver it directly to your
            college pidge before 11:30am the following day.
-        </p>
+        </p><br>
 
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" role="form">
+        <form class="form-inline" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" role="form">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input id="paypal-code" type="hidden" name="hosted_button_id">
           <div class="form-group">
             <input type="hidden" name="on1" value="Referral">
             <input type="hidden" name="os1" id="paypal-ref">
           </div>
+
           <div class="form-group">
             <input type="hidden" name="on0" value="College">
-            <label for="os0">Pidge to:</label>
-            <select name="os0" required>
+            <label for="os0">Pidge to:</label><br>
+            <select class="form-control" name="os0" required>
               <option value=""></option>
               <option value="All Souls">All Souls</option>
               <option value="Balliol">Balliol</option>
@@ -122,7 +126,8 @@
               <option value="Worcester">Worcester</option>
               <option value="Wycliffe Hall">Wycliffe Hall</option>
             </select>
-          </div>
+          </div><br><br><br>
+
           <div class="form-group">
             <input type="submit" class="btn btn-primary" border="0" name="submit" value="Pay with paypal">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
@@ -140,21 +145,21 @@
           convenient time and location to pay.
         </p>
 
-        <form role="form">
+        <form role="form" class="form-inline">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
-          </div>
+            <input class="form-control" type="text" name="name" id="name">
+          </div><br>
 
           <div class="form-group">
             <label for="email">E-mail:</label>
-            <input type="text" name="email" id="email" required>
-          </div>
+            <input class="form-control" type="text" name="email" id="email" required>
+          </div><br>
 
           <div class="form-group">
             <label for="phone">Phone:</label>
-            <input type="text" name="phone" id="phone" required>
-          </div>
+            <input class="form-control" type="text" name="phone" id="phone" required>
+          </div><br>
 
           <input class="btn btn-primary" type="submit" name="submit" value="Reserve">
         </form>
