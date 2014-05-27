@@ -69,7 +69,7 @@ if (strcmp ($res, "VERIFIED") == 0) {
     $first_name  = urlencode($_POST['first_name']);
     $payer_email = urlencode($_POST['payer_email']);
     $college     = urlencode($_POST['option_selection1']);
-    $ref         = urlencode($_POST['option_selection2']);
+    $ref_used    = urlencode($_POST['option_selection2']);
 
     $item_name   = urlencode($_POST['item_name']);
     $quantity    = urlencode($_POST['quantity']);
@@ -78,14 +78,21 @@ if (strcmp ($res, "VERIFIED") == 0) {
 
     if (strcmp ($payment_status, "Completed") == 0) {
       // Send Google Form
+      $codes = file('codes.txt'); 
+      $ref_owned = substr($codes[0], 0, 9);
+      $codes[0] = "";
+
+      $fp = fopen('codes.txt', 'w'); 
+      fwrite($fp, implode($codes));
 
       $req = "";
       $req .= "&entry.96823989=no";
       $req .= "&entry.919457879=" . "$last_name";
       $req .= "&entry.1063042359=" . "$first_name";
+      $req .= "&entry.1807052568=" . "$ref_owned";
       $req .= "&entry.2085491606=" . "$payer_email";
       $req .= "&entry.626776194=" ."$college";
-      $req .= "&entry.2136297149=" . "$ref";
+      $req .= "&entry.2136297149=" . "$ref_used";
       $req .= "&entry.386753929=" . "$item_name";
       $req .= "&entry.99604089=" . "$quantity";
       $req .= "&entry.1991253615=paypal";
