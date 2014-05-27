@@ -490,7 +490,12 @@ a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: url('../img/bg/divider1.jpg')
+	background-image: url('../img/bg/divider1.jpg');
+    border-bottom: thick ;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: orange;
+
 }
 
 .divider2 {
