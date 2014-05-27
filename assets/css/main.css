@@ -385,6 +385,17 @@ a:after {
     margin: 0;
     letter-spacing: 1px;
 }
+.whitewrap {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.whitewrap h1 {
+    margin: 0;
+    letter-spacing: 1px;
+}
 
 .greywrap p {
 	margin-left: 30px;
