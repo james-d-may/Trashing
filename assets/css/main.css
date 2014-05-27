@@ -121,8 +121,8 @@ body {
     resize: vertical;
 }
 
-.product-info span {
-  font-size:2em;
+.product-info span :not(.glyphicon) {
+  font-size: 2em;
 }
 
 .product-info span span {
