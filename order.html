@@ -27,18 +27,27 @@
   <![endif]-->
 </head>
 
-<body class="container centered">
+<body class="order container centered">
 
   <!-- ORDER DETAILS -->
-  <div class="row">
+  <div class="product-info row">
     <h1>Order details</h1>
 
-    <div id="order-detail" class="col-sm-offset-1 col-sm-10 border">
+    <div id="order-detail" class="border col-md-offset-1 col-md-10">
       <div class="row">
-        <div id="description" class="col-sm-8">
+        <div id="description" class="description col-md-4">
+          <h3>Content:</h3>
         </div>
 
-        <div class="col-sm-4">
+        <div id="price-info" class="col-md-4">
+          <h3>Price:</h3>
+          <span id="price" style="margin-left:20px"></span>
+          <br>
+          <h3>Referral code:</h3>
+
+        </div>
+
+        <div class="col-md-4">
           <img id="photo" class="img-responsive pack">
         </div>
       </div>
@@ -46,29 +55,11 @@
     </div>
   </div> <!-- end row -->
 
-  <!-- ORDER TYPE TITLES -->
   <div class="row">
     <div class="col-sm-5 col-sm-offset-1">
       <h2>Buy online</h2>
-    </div><!-- end col-->
+      <h3>next day pidge delivery&nbsp;&nbsp;&nbsp;</h3>
 
-    <div class="col-sm-5">
-      <h2>Reserve</h2>
-    </div><!-- end col-->
-  </div><!-- end row-->
-
-  <div class="row">
-    <div class="col-sm-5 col-sm-offset-1">
-      <h3>next day pidge delivery</h3>
-    </div><!-- end col-->
-
-    <div class="col-sm-5">
-      <h3>collect and pay in person</h3>
-    </div><!-- end col-->
-  </div><!-- end row-->
-
-  <div class="row">
-    <div class="col-sm-5 col-sm-offset-1">
       <div class="border">
         <p>Place an order online and we will deliver it directly to your
            college pidge before 11:30am the following day.
@@ -77,6 +68,10 @@
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" role="form">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input id="paypal-code" type="hidden" name="hosted_button_id">
+          <div class="form-group">
+            <input type="hidden" name="on1" value="Referral">
+            <input type="hidden" name="os1" id="paypal-ref">
+          </div>
           <div class="form-group">
             <input type="hidden" name="on0" value="College">
             <label for="os0">Pidge to:</label>
@@ -136,7 +131,10 @@
       </div>
     </div>
 
-    <div class="col-sm-5">
+    <div class="col-sm-5 ">
+      <h2>Reserve</h2>
+      <h3>collect and pay in person</h3>
+
       <div class="border">
         <p>We aim to call within 30 mins of placing the order to arrange a
           convenient time and location to pay.
