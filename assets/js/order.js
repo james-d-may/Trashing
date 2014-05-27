@@ -24,27 +24,26 @@ var QueryString = function () {
 
 // Each pack's information to be loaded dynamically based on user choice
 var packs = {
-  commoner  : { paypal_full :"GSF95ETJ38UG6",
+  commoner  : { pack_name: "Commoner pack",
+                paypal_full :"VQQEE65N8C57C",
                 price_full : 7,
                 paypal_reduced : "QT4U57ZZ8F8HY",
                 price_reduced : 5,
                 img_src:"./assets/img/packs/commoner2.jpg",
                 inform: "<ul style='margin-left:20px'><li>1.75L of Conffetti</li><li>5 Party Poppers</li><li>1 Party Hat</li><li>1 Necklace</li><li>1 Party Blower</li></ul><br><br>"
               },
-  commoner_test:
-              { paypal_reduced : "ZBBGKJTFCXGMC",
-                price_reduced : 5,
-                img_src:"./assets/img/packs/commoner2.jpg"},
-  scholar   : { paypal_full :"ECLP53ULF7JC4",
+  scholar   : { pack_name: "Scholar pack",
+                paypal_full :"GK7Y42T5DMB4N",
                 price_full : 14,
-                paypal_reduced : "MMDFB5943LCLA",
+                paypal_reduced : "9U4Z4BJY88X72",
                 price_reduced : 10,
                 img_src:"./assets/img/packs/scholar2.jpg",
                 inform: "<ul style='margin-left:20px'><li>2 Silly String Cans</li><li>1.75L of Confetti</li><li>15 Party Poppers</li><li>1 Water Gun</li><li>3 Party Hats</li><li>3 Necklaces</li><li>3 Party Blowers</li></ul>"
               },
-  don       : { paypal_full :"LG2HZ5N5VLY3W",
+  don       : { pack_name: "Don pack",
+                paypal_full :"ZQWJXAE4Y7P22",
                 price_full : 20,
-                paypal_reduced : "24FSN4XCEZETL",
+                paypal_reduced : "CWYZ6GBDAYAB6",
                 price_reduced : 15,
                 img_src:"./assets/img/packs/don2.jpg",
                 inform: "<ul style='margin-left:20px'><li>2 Silly String Cans</li><li>3.5L of Conffetti</li><li>2 Water Guns</li><li>25 Party Poppers</li><li>5 Party Hats</li><li>5 Necklaces</li><li>4 Party Blowers</li></ul>"
@@ -55,18 +54,18 @@ function checkRef(r) {
   var pack = packs[QueryString.pack];
   var now = new Date();
   var deadline = new Date(2014, 5, 30, 0, 0, 0, 0);
-  var reduced = now > deadline;
+  var reduced = now < deadline;
 
   if (isValid(r)) {
     reduced = true;
-    $("#paypal-ref").attr("value", r);
+    $(".ref-code").attr("value", r);
     
     $(".has-feedback").removeClass("has-error").addClass("has-success");
     $(".glyphicon-ok").removeClass("hidden");
     $(".glyphicon-remove").addClass("hidden");
 
   } else {
-    $("#paypal-ref").attr("value", "");
+    $(".ref-code").attr("value", "");
     
     $(".has-feedback").removeClass("has-success").addClass("has-error");
     $(".glyphicon-ok").addClass("hidden");
@@ -78,7 +77,7 @@ function checkRef(r) {
     }
   }
     
-  $("#paypal-code").attr("value", pack.paypal_reduced);
+  $("#paypal-code").attr("value",reduced ? pack.paypal_reduced : pack.paypal_full);
   document.getElementById('price').innerHTML =
     "£" + (reduced ? pack.price_reduced : pack.price_full);
 }
@@ -110,6 +109,7 @@ $(function() {
   var pack = packs[QueryString.pack];
   $("#photo").attr("src", pack.img_src);
   document.getElementById('description').innerHTML += pack.inform;
+  $(".item-input").attr("value", pack.pack_name);
 
   $('#refcode').bind('input', function() {
       checkRef($(this).val());
