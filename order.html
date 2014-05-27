@@ -9,7 +9,6 @@
 
   <title>Trashing.Me - Trashing supplies for Oxford students - Trinity Term 2014</title>
 
-  <link rel="stylesheet" href="assets/css/font-awesome.css" media="all">
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.css" rel="stylesheet">
 
@@ -34,109 +33,136 @@
   <div class="row">
     <h1>Order details</h1>
 
-    <div id="order-detail" class="col-md-offset-1 col-md-10 border">
+    <div id="order-detail" class="col-sm-offset-1 col-sm-10 border">
       <div class="row">
-        <div id="description" class="col-md-8">
+        <div id="description" class="col-sm-8">
         </div>
 
-        <div class="col-md-4">
-          <img id="photo" class="pack" style="padding-top: 20px;">
+        <div class="col-sm-4">
+          <img id="photo" class="img-responsive pack">
         </div>
       </div>
 
     </div>
   </div> <!-- end row -->
 
+  <!-- ORDER TYPE TITLES -->
   <div class="row">
-    <br>
     <div class="col-sm-5 col-sm-offset-1">
       <h2>Buy online</h2>
-      <h3>next day pidge delivery</h3>
+    </div><!-- end col-->
 
+    <div class="col-sm-5">
+      <h2>Reserve</h2>
+    </div><!-- end col-->
+  </div><!-- end row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <h3>next day pidge delivery</h3>
+    </div><!-- end col-->
+
+    <div class="col-sm-5">
+      <h3>collect and pay in person</h3>
+    </div><!-- end col-->
+  </div><!-- end row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
       <div class="border">
         <p>Place an order online and we will deliver it directly to your
-           college pidge before 11:30am the following day.</p>
+           college pidge before 11:30am the following day.
+        </p>
 
-        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" role="form">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input id="paypal-code" type="hidden" name="hosted_button_id">
-
-                <input type="hidden" name="on0" value="College">
-                Pidge to college:
-
-                <select name="os0" required>
-                  <option value=""></option>
-                  <option value="All Souls">All Souls</option>
-                  <option value="Balliol">Balliol</option>
-                  <option value="Blackfriars">Blackfriars</option>
-                  <option value="Brasenose">Brasenose</option>
-                  <option value="Campion Hall">Campion Hall</option>
-                  <option value="Christ Church">Christ Church</option>
-                  <option value="Corpus Christi">Corpus Christi</option>
-                  <option value="Exeter">Exeter</option>
-                  <option value="Green Templeton">Green Templeton</option>
-                  <option value="Harris Manchester">Harris Manchester</option>
-                  <option value="Hertford">Hertford</option>
-                  <option value="Jesus">Jesus</option>
-                  <option value="Keble">Keble</option>
-                  <option value="Kellogg">Kellogg</option>
-                  <option value="Lady Margaret Hall">Lady Margaret Hall</option>
-                  <option value="Linacre">Linacre</option>
-                  <option value="Lincoln">Lincoln</option>
-                  <option value="Magdalen">Magdalen</option>
-                  <option value="Mansfield">Mansfield</option>
-                  <option value="Merton">Merton</option>
-                  <option value="New">New</option>
-                  <option value="Nuffield">Nuffield</option>
-                  <option value="Oriel">Oriel</option>
-                  <option value="Pembroke">Pembroke</option>
-                  <option value="Queen's">Queen's</option>
-                  <option value="Regent's Park">Regent's Park</option>
-                  <option value="St Anne's">St Anne's</option>
-                  <option value="St Antony's">St Antony's</option>
-                  <option value="St Benet's Hall">St Benet's Hall</option>
-                  <option value="St Catherine's">St Catherine's</option>
-                  <option value="St Cross">St Cross</option>
-                  <option value="St Edmund Hall">St Edmund Hall</option>
-                  <option value="St Hilda's">St Hilda's</option>
-                  <option value="St Hugh's">St Hugh's</option>
-                  <option value="St John's">St John's</option>
-                  <option value="St Peter's">St Peter's</option>
-                  <option value="St Stephen's House">St Stephen's House</option>
-                  <option value="Somerville">Somerville</option>
-                  <option value="Trinity">Trinity</option>
-                  <option value="University">University</option>
-                  <option value="Wadham">Wadham</option>
-                  <option value="Wolfson">Wolfson</option>
-                  <option value="Worcester">Worcester</option>
-                  <option value="Wycliffe Hall">Wycliffe Hall</option>
-                </select>
-
-          <input type="submit" class="btn btn-default" border="0" name="submit" value="Pay with paypal">
-          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          <div class="form-group">
+            <input type="hidden" name="on0" value="College">
+            <label for="os0">Pidge to:</label>
+            <select name="os0" required>
+              <option value=""></option>
+              <option value="All Souls">All Souls</option>
+              <option value="Balliol">Balliol</option>
+              <option value="Blackfriars">Blackfriars</option>
+              <option value="Brasenose">Brasenose</option>
+              <option value="Campion Hall">Campion Hall</option>
+              <option value="Christ Church">Christ Church</option>
+              <option value="Corpus Christi">Corpus Christi</option>
+              <option value="Exeter">Exeter</option>
+              <option value="Green Templeton">Green Templeton</option>
+              <option value="Harris Manchester">Harris Manchester</option>
+              <option value="Hertford">Hertford</option>
+              <option value="Jesus">Jesus</option>
+              <option value="Keble">Keble</option>
+              <option value="Kellogg">Kellogg</option>
+              <option value="Lady Margaret Hall">Lady Margaret Hall</option>
+              <option value="Linacre">Linacre</option>
+              <option value="Lincoln">Lincoln</option>
+              <option value="Magdalen">Magdalen</option>
+              <option value="Mansfield">Mansfield</option>
+              <option value="Merton">Merton</option>
+              <option value="New">New</option>
+              <option value="Nuffield">Nuffield</option>
+              <option value="Oriel">Oriel</option>
+              <option value="Pembroke">Pembroke</option>
+              <option value="Queen's">Queen's</option>
+              <option value="Regent's Park">Regent's Park</option>
+              <option value="St Anne's">St Anne's</option>
+              <option value="St Antony's">St Antony's</option>
+              <option value="St Benet's Hall">St Benet's Hall</option>
+              <option value="St Catherine's">St Catherine's</option>
+              <option value="St Cross">St Cross</option>
+              <option value="St Edmund Hall">St Edmund Hall</option>
+              <option value="St Hilda's">St Hilda's</option>
+              <option value="St Hugh's">St Hugh's</option>
+              <option value="St John's">St John's</option>
+              <option value="St Peter's">St Peter's</option>
+              <option value="St Stephen's House">St Stephen's House</option>
+              <option value="Somerville">Somerville</option>
+              <option value="Trinity">Trinity</option>
+              <option value="University">University</option>
+              <option value="Wadham">Wadham</option>
+              <option value="Wolfson">Wolfson</option>
+              <option value="Worcester">Worcester</option>
+              <option value="Wycliffe Hall">Wycliffe Hall</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" border="0" name="submit" value="Pay with paypal">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+          </div>
         </form>
       </div>
     </div>
 
     <div class="col-sm-5">
-      <h2>Reserve</h2>
-      <h3>collect and pay in person</h3>
-
       <div class="border">
-        <p>Reserve a trashing bag  and we aim to call within 30 mins of
-           placing the order to arrange a convenient time and location to pay.
+        <p>We aim to call within 30 mins of placing the order to arrange a
+          convenient time and location to pay.
         </p>
 
-        <div class="orderformitem">
-          <label for="entry_37031659">Mobile Number</label>
-          <input type="text" name="entry.37031659" id="entry_37031659">
-        </div>
+        <form role="form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+          </div>
 
-        <input class="btn btn-warning" type="submit" name="submit" value="Submit">
-        <br><br>
-      </div>
-    </div>
-  </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone" required>
+          </div>
+
+          <input class="btn btn-primary" type="submit" name="submit" value="Reserve">
+        </form>
+      </div><!--end border -->
+    </div><!-- end col-sm-5 -->
+  </div><!-- end row -->
 
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>
