@@ -21,9 +21,9 @@
     padding: 10px;
 }
 
-#description {
+#description, #price-info {
   text-align: left;
-  padding-left: 100px;
+  padding-left: 50px;
 }
 
 .orderformitem {
@@ -500,7 +500,7 @@ a:after {
     padding-bottom: 0px;
 }
 
-.divider2 h1 { 
+.divider2 h1 {
     padding-top: 0px;
 }
 
