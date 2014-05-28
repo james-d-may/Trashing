@@ -31,6 +31,19 @@
     <script src="assets/js/respond.min.js"></script>
   <![endif]-->
 </head>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-51356395-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 <body class="front" data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
@@ -87,13 +100,13 @@
 				<img class="pack" src="./assets/img/packs/commoner2.jpg">
 				<div class="row product-info">
 					<div class="col-sm-7">
-            <ul>
+            			<ul>
   						<li>1.75L of Conffetti</li>
-              <li>5 Party Poppers</li>
+              			<li>5 Party Poppers</li>
   						<li>1 Party Hat</li>
-              <li>1 Necklace</li>
+             			<li>1 Necklace</li>
   						<li>1 Party Blower</li>
-  					</ul><br><br>
+  						</ul><br><br>
 					</div><!-- col-sm-8 -->
 
           <div class="col-sm-5 centered">
@@ -101,7 +114,7 @@
             <form action="./order.html">
               <input type="hidden" name="pack" value="commoner">
               <input class="ref-code" type="hidden" name="ref">
-              <input type="submit" class="btn btn-warning" value="Buy/Reserve">
+              <input type="submit" class="btn btn-warning" value="Buy/Reserve" onclick="_gaq.push(['_trackEvent', 'buy_commoner', 'clicked'])">
             </form>
           </div><!-- col-sm-4 -->
 				</div> <!-- row -->
@@ -113,10 +126,10 @@
         <div class="row product-info">
           <div class="col-sm-7">
       			<ul>
-              <li>2 Silly String Cans</li>
-              <li>1.75L of Confetti</li>
+              		<li>2 Silly String Cans</li>
+              		<li>1.75L of Confetti</li>
       				<li>15 Party Poppers</li>
-              <li>1 Water Gun</li>
+              		<li>1 Water Gun</li>
       				<li>3 Party Hats</li>
       				<li>3 Necklaces</li>
       				<li>3 Party Blowers</li>
@@ -128,7 +141,7 @@
             <form action="./order.html">
               <input type="hidden" name="pack" value="scholar">
               <input class="ref-code" type="hidden" name="ref">
-              <input type="submit" class="btn btn-warning" value="Buy/Reserve">
+              <input type="submit" class="btn btn-warning" value="Buy/Reserve" onclick="_gaq.push(['_trackEvent', 'buy_scholar', 'clicked'])">
             </form>
           </div><!-- col-sm-4 -->
         </div><!-- row -->
@@ -154,7 +167,7 @@
             <form action="./order.html">
               <input type="hidden" name="pack" value="don">
               <input class="ref-code" type="hidden" name="ref">
-              <input type="submit" class="btn btn-warning" value="Buy/Reserve">
+              <input type="submit" class="btn btn-warning" value="Buy/Reserve" onclick="_gaq.push(['_trackEvent', 'buy_don', 'clicked'])">
             </form>
           </div><!-- col-sm-4 -->
         </div><!-- row -->
@@ -320,19 +333,6 @@
 			<h4 >Copyright of Trashing.Me 2014&nbsp;&nbsp; <a href="terms.html"> Terms and Conditions</a> <br/> </h4>
 		</div>
 	</div>
-
-
-  <!--Google analytics code -->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51356395-1', 'trashing.me');
-  ga('send', 'pageview');
-
-  </script>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
