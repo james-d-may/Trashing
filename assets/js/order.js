@@ -26,24 +26,30 @@ var QueryString = function () {
 var packs = {
   commoner  : { pack_name: "Commoner pack",
                 paypal_full :"VQQEE65N8C57C",
+                bitpay_full:"8hF5MBY5h2XhJ52PN76vFv",
                 price_full : 7,
                 paypal_reduced : "QT4U57ZZ8F8HY",
+                bitpay_reduced: "AQXMHf7MqqaZqvFd6ZUHUt",
                 price_reduced : 5,
                 img_src:"./assets/img/packs/commoner2.jpg",
                 inform: "<ul style='margin-left:20px'><li>1.75L of Conffetti</li><li>5 Party Poppers</li><li>1 Party Hat</li><li>1 Necklace</li><li>1 Party Blower</li></ul><br><br>"
               },
   scholar   : { pack_name: "Scholar pack",
                 paypal_full :"GK7Y42T5DMB4N",
+                bitpay_full: "BJrvfx18bsMmFCyL5BPk9b",
                 price_full : 14,
                 paypal_reduced : "9U4Z4BJY88X72",
+                bitpay_reduced: "HNyLGeK9SvCtphpm1BbEDb",
                 price_reduced : 10,
                 img_src:"./assets/img/packs/scholar2.jpg",
                 inform: "<ul style='margin-left:20px'><li>2 Silly String Cans</li><li>1.75L of Confetti</li><li>15 Party Poppers</li><li>1 Water Gun</li><li>3 Party Hats</li><li>3 Necklaces</li><li>3 Party Blowers</li></ul>"
               },
   don       : { pack_name: "Don pack",
                 paypal_full :"ZQWJXAE4Y7P22",
+                bitpay_full: "P38QKKHX9XPxLExzozV44e",
                 price_full : 20,
                 paypal_reduced : "CWYZ6GBDAYAB6",
+                bitpay_reduced: "47jt6LLHN865qPrm8zV7KL",
                 price_reduced : 15,
                 img_src:"./assets/img/packs/don2.jpg",
                 inform: "<ul style='margin-left:20px'><li>2 Silly String Cans</li><li>3.5L of Conffetti</li><li>2 Water Guns</li><li>25 Party Poppers</li><li>5 Party Hats</li><li>5 Necklaces</li><li>4 Party Blowers</li></ul>"
@@ -78,6 +84,7 @@ function checkRef(r) {
   }
     
   $("#paypal-code").attr("value",reduced ? pack.paypal_reduced : pack.paypal_full);
+  $("#bitpay-code").attr("value",reduced ? pack.bitpay_reduced : pack.bitpay_full);
   document.getElementById('price').innerHTML =
     "£" + (reduced ? pack.price_reduced : pack.price_full);
 }

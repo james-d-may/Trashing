@@ -130,13 +130,19 @@
               <option value="Worcester">Worcester</option>
               <option value="Wycliffe Hall">Wycliffe Hall</option>
             </select>
-          </div><br><br><br>
+          </div><br><br>
 
           <div class="form-group">
-            <input type="submit" class="btn btn-primary" border="0" name="submit" value="Pay with paypal">
+            <input type="submit" class="btn btn-primary" border="0" name="submit" value="Pay with card or paypal">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
           </div>
           
+        </form>
+
+        <form action="https://bitpay.com/checkout" method="post" >
+          <input type="hidden" name="action" value="cartAdd" />
+          <input type="hidden" id="bitpay-code" name="data"  />
+          <input type="submit" class="btn btn-primary" border="0" name="submit" value="BitPay, pay with bitcoins." >
         </form>
       </div>
     </div>
