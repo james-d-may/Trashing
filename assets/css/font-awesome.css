@@ -3304,6 +3304,11 @@ body.header-image .page-title-wrapper .title-inner .title-wrapper,body.front .pa
     margin: 0 auto;
 }
 
+body.front .page-title-wrapper h3 {
+    color:  #fff;
+    text-align: center;
+}
+
 body.header-image .page-title-wrapper h1,body.header-image .slideblock h1,body.front .page-title-wrapper h1,body.front .slideblock h1 {
     padding: 0;
     color: #fff;
