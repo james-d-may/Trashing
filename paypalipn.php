@@ -80,7 +80,7 @@ if (strcmp ($res, "VERIFIED") == 0) {
       // Send Google Form
       $codes = file('codes.txt'); 
       $ref_owned = "http://www.trashing.me?ref=";
-      $ref_owned .= s
+      $ref_owned .= substr($codes[0], 0, 9);
       $codes[0] = "";
 
       $fp = fopen('codes.txt', 'w'); 
