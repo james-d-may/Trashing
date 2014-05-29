@@ -85,8 +85,7 @@ function checkRef(r) {
     
   $("#paypal-code").attr("value",reduced ? pack.paypal_reduced : pack.paypal_full);
   $("#bitpay-code").attr("value",reduced ? pack.bitpay_reduced : pack.bitpay_full);
-  document.getElementById('price').innerHTML =
-    "£" + (reduced ? pack.price_reduced : pack.price_full);
+  document.getElementById('price').innerHTML = (reduced ? pack.price_reduced : pack.price_full);
 }
 
 function isValid(r) {
@@ -114,6 +113,7 @@ function isValid(r) {
 // Load pack information on load
 $(function() {
   var pack = packs[QueryString.pack];
+  document.getElementById('pack-title').innerHTML = pack.pack_name + ":";
   $("#photo").attr("src", pack.img_src);
   document.getElementById('description').innerHTML += pack.inform;
   $(".item-input").attr("value", pack.pack_name);

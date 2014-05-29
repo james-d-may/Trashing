@@ -46,15 +46,15 @@
     <h1 style="margin-top: 5px; margin-bottom: 5px;">
       Order details</h1>
 
-    <div id="order-detail" class="border col-md-offset-1 col-md-10">
+    <div itemscope itemtype="http://data-vocabulary.org/Product" id="order-detail" class="border col-md-offset-1 col-md-10">
       <div class="row">
         <div id="description" class="description col-md-4" style="padding-bottom: 0px;">
-          <h3>Content:</h3>
+          <h3 itemprop="name" id="pack-title"></h3>
         </div>
 
-        <div id="price-info" class="col-md-4" style="padding-bottom: 0px;">
+        <div itemprop="offerDetails" itemscope itemtype="http://data-vocabulary.org/Offer" id="price-info" class="col-md-4" style="padding-bottom: 0px;">
           <h3>Price:</h3>
-          <span id="price"></span>
+          <span itemprop="currency" content="GBP">£</span><span itemprop="price" id="price"></span>
           <br>
           <h3>Referral code:</h3>
           <form role="form" class="form-inline">
