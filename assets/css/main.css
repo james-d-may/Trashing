@@ -30,6 +30,15 @@
   padding-left: 50px;
 }
 
+#price-info span {
+  font-size: 2em;
+  margin-left:20px
+}
+
+#price-info #price {
+    margin-left: 0;
+}
+
 .orderformitem {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -126,8 +135,7 @@ body {
 }
 
 #price {
-    font-size: 2em;
-    margin-left:20px
+
 }
 
 .product-info span {
