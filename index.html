@@ -97,21 +97,25 @@
 	<!-- ==== BUY ==== -->
 	<div class="container" id="buy" name="buy">
 		<div class="row white">
-			<div class="col-lg-4 callout">
-				<img class="pack" src="./assets/img/packs/commoner2.jpg" alt="Commoner pack - trashing with confetti and party poppers">
+			<div class="col-lg-4 callout" itemscope itemtype="http://data-vocabulary.org/Product">
+        <span itemprop="name" hidden>Commoner pack</span>
+				<img itemprop="image" class="pack" src="./assets/img/packs/commoner2.jpg" alt="Commoner pack - trashing with confetti and party poppers">
 				<div class="row product-info">
 					<div class="col-sm-7">
-            			<ul>
+            	<ul>
   						<li>1.75L of Conffetti</li>
-              			<li>5 Party Poppers</li>
+              <li>5 Party Poppers</li>
   						<li>1 Party Hat</li>
-             			<li>1 Necklace</li>
+             	<li>1 Necklace</li>
   						<li>1 Party Blower</li>
   						</ul><br><br>
 					</div><!-- col-sm-8 -->
 
           <div class="col-sm-5 centered">
-            <span>£5 <span>£7</span></span><br>
+            <span itemprop="lowPrice" itemprop="price">£5 </span>
+            <span><span itemprop="highprice">£7</span></span><br>
+            <meta itemprop="currency" content="GBP" />
+            <time itemprop="priceValidUntil" datetime="2014-05-30"></time>
             <form action="./order.html">
               <input type="hidden" name="pack" value="commoner">
               <input class="ref-code" type="hidden" name="ref">
@@ -122,7 +126,7 @@
 
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4 callout">
+			<div class="col-lg-4 callout" itemscope itemtype="http://data-vocabulary.org/Product">
 				<img class="pack" src="./assets/img/packs/scholar2.jpg" alt="Scholar pack - trashing with confetti, silly string">
         <div class="row product-info">
           <div class="col-sm-7">
@@ -139,6 +143,8 @@
 
           <div class="col-sm-5 centered">
             <span>£10 <span>£14</span></span><br>
+            <time itemprop="priceValidUntil" datetime="2014-05-30"></time>
+            <meta itemprop="currency" content="GBP" />
             <form action="./order.html">
               <input type="hidden" name="pack" value="scholar">
               <input class="ref-code" type="hidden" name="ref">
@@ -148,7 +154,7 @@
         </div><!-- row -->
 			</div><!-- col-lg-4 -->
 
-			<div class="col-lg-4 callout">
+			<div class="col-lg-4 callout" itemscope itemtype="http://data-vocabulary.org/Product">
 				<img class="pack" src="./assets/img/packs/don2.jpg" alt="Don pack - trashing with silly string, confetti, water guns">
         <div class="row product-info">
           <div class="col-sm-7">
@@ -165,6 +171,8 @@
 
           <div class="col-sm-5 centered">
             <span>£15 <span>£20</span></span><br>
+            <meta itemprop="currency" content="GBP" />
+            <time itemprop="priceValidUntil" datetime="2014-05-30"></time>
             <form action="./order.html">
               <input type="hidden" name="pack" value="don">
               <input class="ref-code" type="hidden" name="ref">
@@ -211,16 +219,11 @@
 
 	<!-- ==== TESTIMONIALS ==== 
 	<div class="container" id="testimonials" name="testimonials">
+    <h1 class="centered">TESTIMONIALS</h1>
+    <hr>
     <br>
-    <div class="row">
-      <br>
-      <h1 class="centered">TESTIMONIALS</h1>
-      <hr>
-      <br>
-      <br>-->
-      
-
-	</div><!-- /container -->
+    <br>
+	</div>< /container -->
 
 	<!-- ==== TWITTER FEED -->
 	<section class="section-divider textdivider divider2">
