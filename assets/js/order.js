@@ -58,9 +58,7 @@ var packs = {
 
 function checkRef(r) {
   var pack = packs[QueryString.pack];
-  var now = new Date();
-  var deadline = new Date(2014, 5, 30, 0, 0, 0, 0);
-  var reduced = now < deadline;
+  var reduced = true;
 
   if (isValid(r)) {
     reduced = true;
