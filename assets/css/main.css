@@ -357,11 +357,11 @@ a:after {
    ========================================================================== */
 
 .page-title-wrapper {
-    background-image: url(../img/header_bg.jpg);
+    background-image: url(../img/bk_hd.jpg);
 }
 
 #headerwrap {
-	background: url(../img/header_bg.jpg) no-repeat center top;
+	background: url(../img/bk_hd.jpg) no-repeat center top;
 	margin-top: -50px;
 	padding-top:70px;
 	text-align:center;
