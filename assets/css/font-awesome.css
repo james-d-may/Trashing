@@ -1832,7 +1832,7 @@
 
 .fancybox-next span {
     right: 10px;
-    background-position: 0 -72px;
+    background-position: 0 -50px;
 }
 
 .fancybox-nav:hover span {
@@ -3220,7 +3220,7 @@ iframe {
 .header {
     background: #fff;
     position: relative;
-    padding-top: 72px;
+    padding-top: 50px;
 }
 
 @media (min-width:992px) {
