@@ -511,8 +511,8 @@ body.front .page-title-wrapper .video-wrapper {
 
 @media (min-width:1280px) {
     body.front .page-title-wrapper .video-wrapper {
-        margin-left: -548px;
-        top: 83px;
+        margin-left: -460px;
+        top: 70px;
     }
 }
 
@@ -549,7 +549,7 @@ body.front .page-title-wrapper .video-wrapper iframe {
 
 @media (min-width:1280px) {
     body.front .page-title-wrapper .video-wrapper iframe {
-        height: 616px;
-        width: 1096px;
+        height: 522px;
+        width: 934px;
     }
 }
