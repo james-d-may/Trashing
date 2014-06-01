@@ -480,7 +480,7 @@ body.front .page-title-wrapper .fa-play {
 
 body.front .page-title-wrapper .fa-play:hover {
     opacity: inherit;
-    background-color: #4187c4;
+    background-color: orange;
 }
 
 body.front .page-title-wrapper .video-wrapper {

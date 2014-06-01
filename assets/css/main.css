@@ -753,6 +753,7 @@ ul {
 
 .pack {
     width: 100%;
+    max-width: 250px;
 }
 
 .col-centered {
