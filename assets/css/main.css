@@ -435,8 +435,8 @@ a:after {
 
 
 .greywrap p {
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 25px;
+	margin-right: 25px;
 	letter-spacing: 1px;
 }
 
@@ -446,6 +446,10 @@ a:after {
 
 .greywrap h2 {
   margin: 0;
+}
+
+.greywrap .col-sm-4 {
+    padding-right: 0;
 }
 
 .greywrap .icon {
