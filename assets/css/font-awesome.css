@@ -103,6 +103,29 @@ iframe {
     border: 1px solid transparent;
 }
 
+.fa-play {
+    background-color: orange;
+    border-radius: 100%;
+    color: #fff;
+    font-family: 'FontAwesome';
+    display: block;
+    height: 70px;
+    left: 100%;
+    margin-top: -20px;
+    margin-left: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 70px;
+    z-index: 2;
+    line-height: 55px;
+    padding-left: 10px;
+    padding-top: 10px;
+    opacity: 0.6;
+    font-style: normal;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     .fa-play:before {
         content: "\f04b";
@@ -131,29 +154,6 @@ iframe {
         font-style: normal;
         cursor: pointer;
     }
-}
-
-.fa-play {
-    background-color: orange;
-    border-radius: 100%;
-    color: #fff;
-    font-family: 'FontAwesome';
-    display: block;
-    height: 70px;
-    left: 100%;
-    margin-top: -20px;
-    margin-left: -20px;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 70px;
-    z-index: 2;
-    line-height: 55px;
-    padding-left: 10px;
-    padding-top: 10px;
-    opacity: 0.6;
-    font-style: normal;
-    cursor: pointer;
 }
 
 .fa-times {
