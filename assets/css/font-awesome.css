@@ -29,7 +29,7 @@
 
 .fa-play:before {
     content: "\f04b";
-    font-size: 60px;
+    font-size: 38px;
 }
 
 .fa-times-circle:before {
@@ -103,24 +103,54 @@ iframe {
     border: 1px solid transparent;
 }
 
+@media (min-width: 768px) {
+    .fa-play:before {
+        content: "\f04b";
+        font-size: 60px;
+    }
+
+    .fa-play {
+        background-color: orange;
+        border-radius: 100%;
+        color: #fff;
+        font-family: 'FontAwesome';
+        display: block;
+        height: 100px;
+        left: 100%;
+        margin-top: -20px;
+        margin-left: -20px;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: 100px;
+        z-index: 2;
+        line-height: 55px;
+        padding-left: 15px;
+        padding-top: 25px;
+        opacity: 0.6;
+        font-style: normal;
+        cursor: pointer;
+    }
+}
+
 .fa-play {
-    background-color: #4187c4;
+    background-color: orange;
     border-radius: 100%;
     color: #fff;
     font-family: 'FontAwesome';
     display: block;
-    height: 100px;
+    height: 70px;
     left: 100%;
     margin-top: -20px;
     margin-left: -20px;
     position: absolute;
     text-align: center;
     top: 50%;
-    width: 100px;
+    width: 70px;
     z-index: 2;
     line-height: 55px;
-    padding-left: 15px;
-    padding-top: 25px;
+    padding-left: 10px;
+    padding-top: 10px;
     opacity: 0.6;
     font-style: normal;
     cursor: pointer;
@@ -137,7 +167,7 @@ iframe {
     z-index: 9999;
     opacity: 0.6;
     color: #fff;
-    background-color: #4187c4;
+    background-color: orange;
     font-family: 'FontAwesome';
     font-style: normal;
     cursor: pointer;
