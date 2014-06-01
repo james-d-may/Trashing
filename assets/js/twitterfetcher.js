@@ -105,7 +105,7 @@ var twitterFetcher = function () {
                 f = document.getElementById(y);
                 for (h = "<div class='row'>"; g < e;) {
                     var width = (12/e).toString();
-                    h += "<div class='col-md-"+ width +"'>" + c[g] + "</div>", g++;
+                    h += "<div class='col-sm-"+ width +"'>" + c[g] + "</div>", g++;
                 }
                 f.innerHTML = h + "</ul>"
             } else w(c);
