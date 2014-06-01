@@ -9,7 +9,11 @@
  */
 
 .product-info{
-  padding: 20px;
+  padding: 10px 0px 0px 10px;
+}
+
+.product-info .col-sm-5 {
+    padding-left: 0;
 }
 
 .order-info{
@@ -755,6 +759,11 @@ ul {
     width: 100%;
     max-width: 250px;
 }
+
+@media (min-width: 600px) {
+    .pack {
+        max-width: 400px;
+    }
 
 .col-centered {
     float: none;
