@@ -439,19 +439,19 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 27px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 24px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 14px;
 }
 h5,
 .h5 {
@@ -743,6 +743,26 @@ pre code {
   }
 }
 @media (min-width: 992px) {
+  h1,
+  .h1 {
+    font-size: 36px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 30px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 24px;
+  }
+  
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+
   .container {
     width: 980px;
   }

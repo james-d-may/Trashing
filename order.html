@@ -11,7 +11,7 @@
   <link href="assets/css/bootstrap.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="assets/css/main.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
@@ -42,42 +42,36 @@
 <body class="order container centered">
 
   <!-- ORDER DETAILS -->
-  <div class="row" style="padding-top: 0px;padding-bottom: 0px;">
-    <h1 style="margin-top: 5px; margin-bottom: 5px;">
-      Order details</h1>
+  <h1 style="margin-top: 5px; margin-bottom: 5px;">
+    Order details</h1>
 
-    <div itemscope itemtype="http://data-vocabulary.org/Product" id="order-detail" class="border col-md-offset-1 col-md-10">
-      <div class="row">
-        <div id="description" class="description col-md-4" style="padding-bottom: 0px;">
-          <h3 itemprop="name" id="pack-title"></h3>
-        </div>
-
-        <div itemprop="offerDetails" itemscope itemtype="http://data-vocabulary.org/Offer" id="price-info" class="col-md-4" style="padding-bottom: 0px;">
-          <h3>Price:</h3>
-          <span itemprop="currency" content="GBP">£</span>
-          <span itemprop="price" id="price"></span>
-          <br>
-          <h3>Referral code:</h3>
-          <form role="form" class="form-inline">
-            <div class="form-group has-feedback">
-              <input id="refcode" class="form-control" name="refcode"/>
-              <span class="glyphicon glyphicon-ok form-control-feedback hidden" style="font-size: 1em;"></span>
-              <span class="glyphicon glyphicon-remove form-control-feedback hidden" style="font-size: 1em;"></span>
-            </div>
-          </form>
-
-        </div>
-
-        <div class="col-md-4">
-          <img id="photo" class="img-responsive pack">
-        </div>
-      </div>
-
+  <div itemscope itemtype="http://data-vocabulary.org/Product" id="order-detail" class="border row">
+    <div class="col-sm-5 col-xs-7 description" id="description" style="padding-bottom: 0px;">
+      <h3 itemprop="name" id="pack-title"></h3>
     </div>
-  </div> <!-- end row -->
+
+    <div class="col-sm-3 col-xs-5" id="price-info" style="padding-bottom: 0px;" itemprop="offerDetails" itemscope itemtype="http://data-vocabulary.org/Offer" >
+      <h3>Price:</h3>
+      <span itemprop="currency" content="GBP">£</span>
+      <span itemprop="price" id="price"></span>
+      <br>
+      <h3>Referral code:</h3>
+      <form role="form" class="form-inline">
+        <div class="form-group has-feedback">
+          <input id="refcode" class="form-control" name="refcode" style="width: 160px;"/>
+          <span class="glyphicon glyphicon-ok form-control-feedback hidden" style="font-size: 1em;"></span>
+          <span class="glyphicon glyphicon-remove form-control-feedback hidden" style="font-size: 1em;"></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-sm-4 col-xs-12">
+      <img id="photo" class="pack">
+    </div>
+  </div>
 
   <div class="row">
-    <div class="col-sm-5 col-sm-offset-1">
+    <div class="col-xs-6" id="online">
       <h2 style=" margin-top: 0px;margin-bottom: 0px;">
         Buy online</h2>
       <h3 style="margin-top: 5px; margin-bottom: 5px;">next day pidge delivery&nbsp;&nbsp;&nbsp;</h3>
@@ -85,9 +79,9 @@
       <div class="border">
         <p>Place an order online and we will deliver it directly to your
            college pidge before 11:30am the following day.
-        </p><br>
+        </p>
 
-        <form class="form-inline" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" role="form" style="padding-bottom: 0px;">
+        <form class="form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" role="form" style="padding-bottom: 0px;">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input id="paypal-code" type="hidden" name="hosted_button_id">
           <div class="form-group">
@@ -98,7 +92,7 @@
           <div class="form-group">
             <input type="hidden" name="on0" value="College">
             <label for="os0">Pidge to:</label><br>
-            <select class="form-control" name="os0" required>
+            <select class="form-control" name="os0" required >
               <option value=""></option>
               <option value="All Souls">All Souls</option>
               <option value="Balliol">Balliol</option>
@@ -145,7 +139,7 @@
               <option value="Worcester">Worcester</option>
               <option value="Wycliffe Hall">Wycliffe Hall</option>
             </select>
-          </div><br><br>
+          </div>
 
           <div class="form-group">
             <input type="submit" class="btn btn-primary" border="0" name="submit" value="Pay with card or paypal">
@@ -162,7 +156,7 @@
       </div>
     </div>
 
-    <div class="col-sm-5 ">
+    <div class="col-xs-6" id="reserve">
       <h2 style=" margin-top: 0px;margin-bottom: 0px;">Reserve</h2>
       <h3 style="margin-top: 5px; margin-bottom: 5px;">collect and pay in person</h3>
 
@@ -195,6 +189,7 @@
       </div><!--end border -->
     </div><!-- end col-sm-5 -->
   </div><!-- end row -->
+
   <p style="color:grey;font-size:14px;margin-bottom: 0px;">By buying or reserving any pack you are agreeing to all the <a href="terms.html"> Terms and Conditions</a> specified by Trashing.me</p>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>

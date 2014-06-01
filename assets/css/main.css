@@ -27,7 +27,14 @@
 
 #description, #price-info {
   text-align: left;
-  padding-left: 50px;
+}
+
+.form-group {
+    margin-bottom: 4px;
+}
+
+#online .btn {
+    width: 180px;
 }
 
 #price-info span {
@@ -742,6 +749,11 @@ form {
 ul {
     list-style-position: inside;
     padding: 0px;
+}
+
+
+.pack {
+    width: 100%;
 }
 
 .col-centered {
