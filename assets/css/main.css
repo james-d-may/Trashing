@@ -428,6 +428,10 @@ a:after {
     text-align: center;
 }
 
+.product {
+    margin-bottom: 20px;
+}
+
 .orangewrap h1 {
     margin: 0;
     letter-spacing: 1px;
@@ -762,6 +766,13 @@ ul {
 .pack {
     width: 100%;
     max-width: 250px;
+}
+
+@media (max-width: 600px) {
+    .product {
+        padding-left: 9px;
+        padding-right: 10px;
+    }
 }
 
 @media (min-width: 600px) {
