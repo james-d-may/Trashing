@@ -221,7 +221,10 @@ iframe {
 body.header-image .header .region-inner,body.front .header .region-inner {
     padding: 0;
     max-width: none;
-    background: #131317;
+    background-size: 100%;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 body.header-image .breadcrumb,body.front .breadcrumb {
@@ -235,10 +238,6 @@ body.header-image #content .section-inner,body.front #content .section-inner {
 
 body.header-image .page-title-wrapper,body.front .page-title-wrapper {
     margin: 0;
-    background-size: 100%;
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
 }
 
 body.header-image .page-title-wrapper .title-inner,body.front .page-title-wrapper .title-inner {
