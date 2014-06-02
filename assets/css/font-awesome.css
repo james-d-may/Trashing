@@ -258,6 +258,10 @@ body.header-image .page-title-wrapper .title-inner,body.front .page-title-wrappe
         height: 720px;
     }
 }
+.page-title-wrapper a {
+    display: table;
+    margin: 20px auto 0 auto;
+}
 
 body.header-image .page-title-wrapper .title-inner .title-wrapper,body.front .page-title-wrapper .title-inner .title-wrapper {
     display: table-cell;
@@ -269,6 +273,14 @@ body.header-image .page-title-wrapper .title-inner .title-wrapper,body.front .pa
 body.front .page-title-wrapper h3 {
     color:  #fff;
     text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media (min-width:768px) {
+    body.front .page-title-wrapper h3 {
+        font-size: 22px;
+    }
 }
 
 body.header-image .page-title-wrapper h1,body.header-image .slideblock h1,body.front .page-title-wrapper h1,body.front .slideblock h1 {
