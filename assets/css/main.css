@@ -367,8 +367,15 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
+.region-inner {
+    background-image: url(../img/back.jpg);
+}
+
 .page-title-wrapper {
-    background-image: url(../img/bk_hd.jpg);
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: right top;
 }
 
 #headerwrap {
