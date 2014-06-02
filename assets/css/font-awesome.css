@@ -307,17 +307,16 @@ body.header-image .page-title-wrapper h2,body.header-image .slideblock h2,body.f
     max-width: 80%;
     text-align: center;
     text-transform: none;
-    font-size: 14px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: 600;
     margin: -10px auto;
 }
 
 @media (min-width:768px) {
     body.header-image .page-title-wrapper h2,body.header-image .slideblock h2,body.front .page-title-wrapper h2,body.front .slideblock h2 {
         margin: 0 auto;
-        font-size: 1.8em;
+        font-size: 2em;
         line-height: 1.5875em;
-        max-width: 70%;
         margin: -5px auto;
     }
 }
@@ -503,7 +502,7 @@ body.front .page-title-wrapper {
 body.front .page-title-wrapper .fa-play {
     opacity: 0.8;
     position: static;
-    margin: 20px auto 0 auto;
+    margin: 0 auto 40px auto;
     background-color: rgba(0,0,0,0.8);
 }
 
