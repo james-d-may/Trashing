@@ -374,8 +374,14 @@ a:after {
 .page-title-wrapper {
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 26%;
   background-position: right top;
+}
+
+@media (min-width: 992px) {
+  .page-title-wrapper {
+    background-position-y: 45px;
+  }
 }
 
 #headerwrap {
