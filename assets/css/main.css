@@ -12,6 +12,10 @@
   padding: 10px 0px 0px 10px;
 }
 
+.team-wrapper{
+  padding: 0;
+}
+
 .product-info .col-sm-5 {
     padding-left: 0;
 }
